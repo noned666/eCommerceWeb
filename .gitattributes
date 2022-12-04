@@ -11,7 +11,8 @@
 # Note: This is only used by command line
 ###############################################################################
 *.cs     diff=csharp
-
+*.js linguist-language=scharp
+*.css linguist-language=scharp
 
 ###############################################################################
 # Set the merge driver for project and solution files
