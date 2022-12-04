@@ -12,8 +12,8 @@
 ###############################################################################
 
 *.js linguist-language=csharp
-*.css linguist-language=Python
-*.html linguist-language=Python
+*.css linguist-language=csharp
+*.html linguist-language=csharp
 
 ###############################################################################
 # Set the merge driver for project and solution files
