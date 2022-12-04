@@ -1,0 +1,46 @@
+﻿@model eCommerceUI.Models.AccountRecoveryMV
+@{
+    ViewBag.Title = "Account";
+}
+<div class="breadcrumbs mt-15">
+    <div class="container">
+        <ul class="list-unstyled d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <li><a href="@Url.Content("~/Home/Index")">Home</a></li>
+            <li><span>Account Recovery</span></li>
+        </ul>
+    </div>
+</div>
+<div class="login mb-60">
+    <div class="container">
+        <div id="CustomerLoginForm">
+            <h1 class="h3 mt-30 mb-40 text-center">Forgot Password</h1>
+            @using (Html.BeginForm("AccountRecovery", "PasswordRecovery", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group">
+                    @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control", id = "newpassword", placeholder = "Enter UserName or EmailAddress", type = "text", required = "required" } })
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    <i class="far fa-unlock"></i>
+                </div>
+                <button class="btn btn-filled" type="submit">Recovery Password</button>
+            }
+        </div>
+        <div class="pt-35 mt-35 border-top">
+            <h2 class="h3 text-center">Login</h2>
+            <div class="mb-35">
+                <p class="h6 mb-15">Enjoy The Benefits Of Registering:</p>
+                <ul class="mb-0">
+                    <li>Order: view Order History, track and manage purchases and returns.</li>
+                    <li>
+                        Address Book and Card Wallet: safely store delivery and payment details for faster
+                        checkout
+                    </li>
+                    <li>Saved for later: wish list your preferred items and track their availability</li>
+                </ul>
+            </div>
+            <a href="@Url.Content("~/User/Login")" class="btn btn--full">LOGIN</a>
+        </div>
+    </div>
+</div>

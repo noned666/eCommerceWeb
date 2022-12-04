@@ -1,0 +1,37 @@
+﻿@model IEnumerable<eCommerceUI.Models.AddressTypeMV>
+@{
+    ViewBag.Title = "Address Types";
+}
+<div class="container">
+    <div class="page-width">
+
+        <h3 class="docs-title">Address Types List</h3>
+        <p>
+            @Html.ActionLink("New Address Type", "NewAddressType", null, new { @class = "btn btn--secondary" })
+        </p>
+
+        <div class="table-wrap">
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.AddressTypeID)</th>
+                        <th>@Html.DisplayNameFor(model => model.AddressType)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="responsive-table-row">
+                            <td>#@Html.DisplayFor(modelItem => item.AddressTypeID)</td>
+                            <td>@Html.DisplayFor(modelItem => item.AddressType)</td>
+                            <td>
+                                @Html.ActionLink("Edit", "EditAddressType", new { id = item.AddressTypeID }, new { @class = "btn" })
+                            </td>
+                        </tr>
+                    }
+                <tbody>
+            </table>
+        </div>
+    </div>
+</div>

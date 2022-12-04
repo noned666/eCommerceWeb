@@ -1,0 +1,168 @@
+﻿@model eCommerceUI.Models.Reg_UserAddressMV
+@{
+    ViewBag.Title = "User Address";
+}
+<div class="container">
+    <div class="page-width">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <hr />
+            <h3 class="docs-title text-center">New User Address</h3>
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.UserID)
+                <div class="row" style="margin-left:1px;">
+                    <div class="form-group col-md-3">
+                        @Html.LabelFor(model => model.AddressTypeID, "Select Address Type", htmlAttributes: new { @class = "control-label" })
+                        @Html.DropDownList("AddressTypeID", new SelectList(Model.AddressTypeList, "AddressTypeID", "AddressType", Model.AddressTypeID), "--Choose--", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.AddressTypeID, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        @Html.LabelFor(model => model.StatusID, "Select Status", htmlAttributes: new { @class = "control-label" })
+                        @Html.DropDownList("StatusID", new SelectList(Model.StatusList, "StatusID", "StatusTitle", Model.StatusID), "--Choose--", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.StatusID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FullAddress, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-6">
+                        @Html.EditorFor(model => model.FullAddress, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FullAddress, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="row" style="margin-left:1px;">
+                    <div class="form-group col-md-3">
+                        @Html.LabelFor(model => model.CountryID, "Select Country", htmlAttributes: new { @class = "control-label" })
+                        @Html.DropDownList("CountryID", new SelectList(Model.CountriesList, "CountryID", "CountryTitle", Model.CountryID), "--Choose--", htmlAttributes: new { @class = "form-control", onchange = "myFunction()", required = "required" })
+                        @Html.ValidationMessageFor(model => model.CountryID, "", new { @class = "text-danger" })
+
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        @Html.LabelFor(model => model.CityID, "Select City", htmlAttributes: new { @class = "control-label" })
+                        @Html.DropDownList("CityID", new SelectList(Model.CitiesList, "CityID", "CityName", Model.CityID), "--Choose--", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.CityID, "", new { @class = "text-danger" })
+
+                    </div>
+                </div>
+
+                <div class="row" style="margin-left:1px;">
+                    <div class="form-group col-md-3">
+                        @Html.LabelFor(model => model.PostalCode, htmlAttributes: new { @class = "control-label" })
+                        @Html.EditorFor(model => model.PostalCode, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.PostalCode, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        @Html.LabelFor(model => model.ContactNo, htmlAttributes: new { @class = "control-label" })
+                        @Html.EditorFor(model => model.ContactNo, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ContactNo, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn--secondary" />
+                    </div>
+                </div>
+            </div>
+
+        }
+        <hr />
+        <h3 class="docs-title">Address Types List</h3>
+        <p>
+            <div style="float:right;" class="form-group">
+                <input type="text"
+                       style="background-image: url('@Url.Content("~/Content/Template/images/searchicon.png")'); background-position: 10px 5px; background-repeat: no-repeat; font-size: 16px; padding: 12px 20px 12px 40px; border: 1px solid #ddd; margin-bottom: 12px; "
+                       class="search form-control"
+                       id="myInput"
+                       placeholder="What you looking for?">
+            </div>
+        </p>
+
+        <div class="table">
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <td>#Unique No</td>
+                        <td>Address Type</td>
+                        <td>Full Address</td>
+                        <td>Contact No</td>
+                        <td>City</td>
+                        <td>Postal Code</td>
+                        <td>Status</td>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    @foreach (var item in Model.list)
+                    {
+                        <tr class="responsive-table-row">
+                            <td>#@Html.DisplayFor(modelItem => item.UserAddressID)</td>
+                            <td>@Html.DisplayFor(modelItem => item.AddressType)</td>
+                            <td>@Html.DisplayFor(modelItem => item.FullAddress)</td>
+                            <td>@Html.DisplayFor(modelItem => item.ContactNo)</td>
+                            <td>@Html.DisplayFor(modelItem => item.City)</td>
+                            <td>@Html.DisplayFor(modelItem => item.PostalCode)</td>
+                            <td>
+                                @if (item.Status == "Visible")
+                                {
+                                    <span class="label label--new mb-3 mr-3 text-nowrap">
+                                        @Html.DisplayFor(modelItem => item.Status)
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="label label--sale mb-3 mr-3 text-nowrap">
+                                        @Html.DisplayFor(modelItem => item.Status)
+                                    </span>
+                                }
+
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "EditUserAddress", new { id = item.UserAddressID }, new { @class = "btn" })
+                            </td>
+                        </tr>
+                    }
+                <tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var countryid = $("#CountryID").val();
+        $.ajax({
+            type: "GET",
+            url: "/BasicConfiguration/GetCitiesByCountryID?countryid=" + countryid,
+            data: [],
+            success: function (data) {
+                var s = '<option value="-1">Select City</option>';
+                for (var i = 0; i < data.length; i++) {
+                    s += '<option value="' + data[i].CityID + '">' + data[i].CityName + '</option>';
+                }
+                $("#CityID").html(s);
+            }
+
+        });
+    });
+    function myFunction() {
+        var countryid = $("#CountryID").val();
+        $.ajax({
+            type: "GET",
+            url: "/BasicConfiguration/GetCitiesByCountryID?countryid=" + countryid,
+            data: [],
+            success: function (data) {
+                var s = '<option value="-1">Select City</option>';
+                for (var i = 0; i < data.length; i++) {
+                    s += '<option value="' + data[i].CityID + '">' + data[i].CityName + '</option>';
+                }
+                $("#CityID").html(s);
+            }
+        });
+    };
+</script>

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<eCommerceUI.Models.UserTypeMV>
+
+@{
+    ViewBag.Title = "UserTypes_List";
+}
+
+<div class="container">
+    <div class="page-width">
+
+        <h3 class="docs-title">User Type List</h3>
+        <p>
+            @Html.ActionLink("New User Type", "NewUserType", null, new { @class = "btn btn--secondary" })
+        </p>
+
+        <div class="table-wrap">
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.UserTypeID)</th>
+                        <th>@Html.DisplayNameFor(model => model.UserType)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="responsive-table-row">
+                            <td>#@Html.DisplayFor(modelItem => item.UserTypeID)</td>
+                            <td>@Html.DisplayFor(modelItem => item.UserType)</td>
+                            <td>
+                                @Html.ActionLink("Edit", "EditUserType", new { id = item.UserTypeID }, new { @class = "btn" })
+                            </td>
+                        </tr>
+
+                    }
+                <tbody>
+            </table>
+        </div>
+    </div>
+</div>

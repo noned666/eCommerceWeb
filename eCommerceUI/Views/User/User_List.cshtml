@@ -1,0 +1,86 @@
+﻿@model IEnumerable<eCommerceUI.Models.UserMV>
+@{
+    ViewBag.Title = "List";
+}
+<div class="container">
+    <div class="page-width">
+        <h3 class="docs-title">User List</h3>
+        <p>
+            @Html.ActionLink("New User", "Register", null, new { @class = "btn btn--secondary" })
+            <div style="float:right;" class="form-group">
+                <input type="text"
+                       style="background-image: url('@Url.Content("~/Content/Template/images/searchicon.png")'); background-position: 10px 5px; background-repeat: no-repeat; font-size: 16px; padding: 12px 20px 12px 40px; border: 1px solid #ddd; margin-bottom: 12px; "
+                       class="search form-control"
+                       id="myInput"
+                       placeholder="What you looking for?">
+            </div>
+        </p>
+
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th>
+                        User Name
+                    </th>
+                    <th>
+                        Email Address
+                    </th>
+                    <th>
+                        User Type
+                    </th>
+                    <th>
+                        First Name
+                    </th>
+                    <th>
+                        Last Name
+                    </th>
+                    <th>
+                        Contact No
+                    </th>
+                    <th>
+                        Gender
+                    </th>
+                    <th>
+                        Account Status
+                    </th>
+
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmailAddress)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirstName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ContactNo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Gender)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserStatus)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Details", "Details", new { id = item.UserID }, new { @class = "btn" })
+                        </td>
+                    </tr>
+                }
+            <tbody>
+        </table>
+    </div>
+</div>

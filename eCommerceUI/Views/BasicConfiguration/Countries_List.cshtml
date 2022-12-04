@@ -1,0 +1,35 @@
+﻿@model IEnumerable<eCommerceUI.Models.CountryMV>
+@{
+    ViewBag.Title = "List";
+}
+<div class="container">
+    <div class="page-width">
+        <h3 class="docs-title">Country List</h3>
+        <p>
+            @Html.ActionLink("New Country", "NewCountry", null, new { @class = "btn btn--secondary" })
+        </p>
+        <div class="table-wrap">
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.CountryID)</th>
+                        <th>@Html.DisplayNameFor(model => model.CountryTitle)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="responsive-table-row">
+                            <td>#@Html.DisplayFor(modelItem => item.CountryID)</td>
+                            <td>@Html.DisplayFor(modelItem => item.CountryTitle)</td>
+                            <td>
+                                @Html.ActionLink("Edit", "EditCountry", new { id = item.CountryID }, new { @class = "btn" })
+                            </td>
+                        </tr>
+                    }
+                <tbody>
+            </table>
+        </div>
+    </div>
+</div>

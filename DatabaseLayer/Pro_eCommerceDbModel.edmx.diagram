@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d1b34aaeb00e42bfa5d1874050c1fd36" Name="Diagram1" ZoomLevel="139">
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.AddressTypeTable" Width="1.5" PointX="32.25" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.BankAccountTable" Width="1.5" PointX="31.5" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.BrandTable" Width="1.5" PointX="31.25" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.CartTable" Width="1.5" PointX="36.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.CityTable" Width="1.5" PointX="30" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.ColorTypeTable" Width="1.5" PointX="26.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.CompareTable" Width="1.5" PointX="35.75" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.CountryTable" Width="1.5" PointX="27.75" PointY="40" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.CustomerReviewImageTable" Width="1.5" PointX="36.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.CustomerReviewTable" Width="1.5" PointX="31.5" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.DiscountTable" Width="1.5" PointX="34.5" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.GenderTable" Width="1.5" PointX="19.125" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.MainCategoryTable" Width="1.5" PointX="28.5" PointY="32.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.OrderDetailTable" Width="1.5" PointX="36.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.OrderHeaderTable" Width="1.5" PointX="34.5" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.OrderPaymentTable" Width="1.5" PointX="39.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.OrderStatusTable" Width="1.5" PointX="32.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.PaymentStatusTable" Width="1.5" PointX="37.5" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.PaymentTypeTable" Width="1.5" PointX="32.25" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.ProductDetailTable" Width="1.5" PointX="28.5" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.ProductFeatureTable" Width="1.5" PointX="28.5" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.ProductHeaderTable" Width="1.5" PointX="33.5" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.ProductTagTable" Width="1.5" PointX="35.75" PointY="34" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.SeasonDiscountTable" Width="1.5" PointX="35.75" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.SeasonTable" Width="1.5" PointX="28.5" PointY="51" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.ShippingFeelTable" Width="1.5" PointX="32.25" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.SizeLevelTable" Width="1.5" PointX="20" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.SizeTypeByLevelTable" Width="1.5" PointX="23.25" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.SizeTypeTable" Width="1.5" PointX="19.875" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.StatusTable" Width="1.5" PointX="18.5" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.SubCategoryTable" Width="1.5" PointX="30.75" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.TagTable" Width="1.5" PointX="33.5" PointY="43.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.UnitTable" Width="1.5" PointX="26.25" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.UserAddressTable" Width="2.125" PointX="34.5" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.UserStatusTable" Width="1.5" PointX="24" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.UserTable" Width="1.5" PointX="26.25" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.UserTypeTable" Width="1.5" PointX="24" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.WishListTable" Width="1.5" PointX="38.75" PointY="29.5" IsExpanded="true" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_UserAddressTable_AddressTypeTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_BankAccountTable_PaymentTypeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_BankAccountTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_BankAccountTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_BrandTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductHeaderTable_BrandTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_CartTable_DiscountTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_CityTable_CountryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ShippingFeelTable_CityTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_UserAddressTable_CityTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ColorTypeTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ColorTypeTable_StatusTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductDetailTable_ColorTypeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_CompareTable_ProductDetailTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_CompareTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_CustomerReviewImageTable_CustomerReviewTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_CustomerReviewImageTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_CustomerReviewImageTable_StatusTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_CustomerReviewTable_OrderHeaderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_CustomerReviewTable_ProductHeaderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_CustomerReviewTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_CustomerReviewTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_DiscountTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderDetailTable_DiscountTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_SizeTypeByLevelTable_GenderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_UserTable_GenderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_MainCategoryTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_SubCategoryTable_MainCategoryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderDetailTable_OrderHeaderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderDetailTable_ProductDetailTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderHeaderTable_OrderStatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderHeaderTable_PaymentTypeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderHeaderTable_ShippingFeelTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderHeaderTable_UserAddressTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderHeaderTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderPaymentTable_OrderHeaderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderPaymentTable_PaymentStatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderPaymentTable_PaymentTypeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_OrderStatusTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductDetailTable_ProductHeaderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductDetailTable_SizeTypeByLevelTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductDetailTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductDetailTable_StatusTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductDetailTable_UnitTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductDetailTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductDetailTable_UserTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductDetailTable_UserTable2" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductDetailTable_UserTable3" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductDetailTable_UserTable4" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductFeatureTable_ProductHeaderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductFeatureTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductFeatureTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductFeatureTable_UserTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductHeaderTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductHeaderTable_UserTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductHeaderTable_UserTable2" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductHeaderTable_UserTable3" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductTagTable_ProductHeaderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_SeasonDiscountTable_ProductHeaderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_WishListTable_ProductHeaderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductTagTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ProductTagTable_TagTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_SeasonDiscountTable_SeasonTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_SeasonDiscountTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_SeasonTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_ShippingFeelTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_SizeTypeByLevelTable_SizeLevelTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_SizeTypeByLevelTable_SizeTypeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_SizeTypeByLevelTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_SubCategoryTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_UserAddressTable_StatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_SubCategoryTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_UserAddressTable_UserTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_UserTable_UserStatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_UserTable_UserTypeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Pro_EccomerceDbModel.FK_WishListTable_UserTable" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Pro_EccomerceDbModel.PasswordRecoveryTable" Width="1.5" PointX="14.625" PointY="16.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<eCommerceUI.Models.GenderMV>
+@{
+    ViewBag.Title = "List";
+}
+<div class="container">
+    <div class="page-width">
+
+        <h3 class="docs-title">Gender List</h3>
+        <p>
+            @Html.ActionLink("New Gender", "NewGender", null, new { @class = "btn btn--secondary" })
+        </p>
+
+        <div class="table-wrap">
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.GenderID)</th>
+                        <th>@Html.DisplayNameFor(model => model.GenderTitle)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="responsive-table-row">
+                            <td>#@Html.DisplayFor(modelItem => item.GenderID)</td>
+                            <td>@Html.DisplayFor(modelItem => item.GenderTitle)</td>
+                            <td>
+                                @Html.ActionLink("Edit", "EditGender", new { id = item.GenderID }, new { @class = "btn" })
+                            </td>
+                        </tr>
+                    }
+                <tbody>
+            </table>
+        </div>
+    </div>
+</div>

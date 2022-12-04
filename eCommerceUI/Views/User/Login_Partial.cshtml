@@ -1,0 +1,65 @@
+﻿<div class="mb-15">
+    <input type="hidden" name="form_type" value="customer_login" />
+    <input type="hidden" name="utf8" value="✓" />
+
+    <div>
+        <label for="PopupCustomerEmail" class="label-required">EMAIL/USER NAME</label>
+        <input type="text" name="L_UserName" id="L_UserName" class=""
+               placeholder="Your Email/Username" spellcheck="false"
+               autocapitalize="off" required="required">
+    </div>
+
+    <div>
+        <label for="PopupCustomerPassword" class="label-required">PASSWORD</label>
+        <input type="password" name="L_Password" id="L_Password" class=""
+               placeholder="••••••" required="required">
+    </div>
+
+    <input type="submit" class="btn btn--full btn--secondary mb-20" value="LOGIN" onclick="loginfunction();">
+    <div class="mb-15">
+        <span class="popup-account__return-to-store btn-link"
+              data-js-popup-close>RETURN TO STORE</span>
+    </div>
+    <div class="mb-10">
+
+        <a href="~/PasswordRecovery/AccountRecovery" class="btn-link js-button-block-visibility"
+           data-block-link="#recover" data-action="open" data-action-close-popup="account">
+            Forgot
+            Your Password?
+        </a>
+        <script>
+            Loader.require({
+                type: "script",
+                name: "buttons_blocks_visibility"
+            });
+        </script>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    function loginfunction() {
+        var username = document.getElementById("L_UserName").value;
+        var password = document.getElementById("L_Password").value;
+        
+        $.ajax({
+            type: "GET",
+            url: "/User/Login_Partial?username=" + username + "&password=" + password,
+            data: [],
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                if (data = "/Home/Index") {
+                    window.location.href = data;
+                }
+                else {
+                    alert(data);
+                }
+            },
+            error: function () {
+                alert("Un-Expected Issue Error is Occur, Plz Try-Again");
+            }
+        });
+    }
+</script>

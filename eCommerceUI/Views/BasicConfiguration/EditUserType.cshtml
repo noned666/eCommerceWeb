@@ -1,0 +1,34 @@
+﻿@model eCommerceUI.Models.UserTypeMV
+
+@{
+    ViewBag.Title = "Редактирование";
+}
+<div class="container">
+    <div class="page-width">
+        <h3 class="docs-title">Редактирование пользователя</h3>
+        <hr />
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal">
+              
+                @Html.ValidationSummary(true, "", new { @class = "text-danger"})
+                @Html.HiddenFor(model => model.UserTypeID)
+                <div class="form-group">
+                    @Html.LabelFor(model => model.UserType, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.UserType, new { htmlAttributes = new { @class = "form-control", placholder = "Enter user type" } })
+                        @Html.ValidationMessageFor(model => model.UserType, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Save" class="btn btn--secondary" />
+                        @Html.ActionLink("Back to List", "UserTypes_List", null, new { @class = "btn" })
+                    </div>
+                </div>
+            </div>
+        }
+        </div>
+    </div>

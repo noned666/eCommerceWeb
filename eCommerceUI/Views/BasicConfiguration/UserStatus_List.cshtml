@@ -1,0 +1,37 @@
+﻿@model IEnumerable<eCommerceUI.Models.UserStatusMV>
+@{
+    ViewBag.Title = "List";
+}
+<div class="container">
+    <div class="page-width">
+
+        <h3 class="docs-title">User Statuses List</h3>
+        <p>
+            @Html.ActionLink("New User Status", "NewUserStatus", null, new { @class = "btn btn--secondary" })
+        </p>
+
+        <div class="table-wrap">
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.UserStatusID)</th>
+                        <th>@Html.DisplayNameFor(model => model.UserStatuc)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="responsive-table-row">
+                            <td>#@Html.DisplayFor(modelItem => item.UserStatusID)</td>
+                            <td>@Html.DisplayFor(modelItem => item.UserStatuc)</td>
+                            <td>
+                                @Html.ActionLink("Edit", "EditUserStatus", new { id = item.UserStatusID }, new { @class = "btn" })
+                            </td>
+                        </tr>
+                    }
+                <tbody>
+            </table>
+        </div>
+    </div>
+</div>

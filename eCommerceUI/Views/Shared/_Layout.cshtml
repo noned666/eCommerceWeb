@@ -1,0 +1,1531 @@
+﻿<!doctype html>
+<html class="no-js supports-no-cookies" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#141414">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title> @ViewBag.Title - Ilyasoft Store</title>
+    <meta name="description" content="Checkout fashion HTML theme.">
+    <link rel="stylesheet" href="~/Content/Template/styles/start-style.css">
+    <script>
+        var Loader = {
+            settings: {
+                scripts: {
+                    carousel_articles: {
+                        postload: true
+                    },
+                    carousel_products: {
+                        postload: true
+                    },
+                    carousel_brands: {
+                        postload: true
+                    }
+                },
+                styles: {
+                    theme: {
+                        loaded_class: 'css-theme-loaded'
+                    },
+                    theme_05: {
+                        loaded_class: 'css-theme-loaded'
+                    },
+                    theme_06: {
+                        loaded_class: 'css-theme-loaded'
+                    },
+                    theme_07: {
+                        loaded_class: 'css-theme-loaded'
+                    },
+                    theme_08: {
+                        loaded_class: 'css-theme-loaded'
+                    },
+                    theme_10: {
+                        loaded_class: 'css-theme-loaded'
+                    },
+                    theme_11: {
+                        loaded_class: 'css-theme-loaded'
+                    },
+                    theme_12: {
+                        loaded_class: 'css-theme-loaded'
+                    },
+                    theme_14: {
+                        loaded_class: 'css-theme-loaded'
+                    },
+                    theme_15: {
+                        loaded_class: 'css-theme-loaded'
+                    },
+                    text_font: {
+                        loaded_class: 'text-font-loaded'
+                    }
+                }
+            },
+            main: {
+                scripts: ['vendor', 'theme'],
+                styles: []
+            },
+            includes: {
+                scripts: {
+                    //plugins
+                    plugin_popper: '@Url.Content("~/Content/Template/scripts/plugin.popper.min.js")',
+                    plugin_tippy: '@Url.Content("~/Content/Template/scripts/plugin.tippy.all.min.js")',
+                    plugin_fotorama: '@Url.Content("~/Content/Template/scripts/plugin.fotorama.min.js")',
+                    plugin_instafeed: '@Url.Content("~/Content/Template/scripts/plugin.instafeed.min.js")',
+                    plugin_ion_range_slider: '@Url.Content("~/Content/Template/scripts/plugin.ion-range-slider.min.js")',
+                    plugin_masonry: '@Url.Content("~/Content/Template/scripts/plugin.masonry.min.js")',
+                    plugin_revolution_slider: '@Url.Content("~/Content/Template/scripts/plugin.revolution-slider.min.js")',
+                    plugin_sticky_sidebar: '@Url.Content("~/Content/Template/scripts/plugin.sticky-sidebar.min.js")',
+                    //global
+                    vendor: '@Url.Content("~/Content/Template/scripts/vendor.min.js")',
+                    theme: '@Url.Content("~/Content/Template/scripts/theme.min.js")',
+                    //modules
+                    tooltip: '@Url.Content("~/Content/Template/scripts/module.tooltip.min.js")',
+                    buttons_blocks_visibility: '@Url.Content("~/Content/Template/scripts/module.buttons-blocks-visibility.min.js")',
+                    collections: '@Url.Content("~/Content/Template/scripts/module.collections.min.js")',
+                    dynamic_checkout: '@Url.Content("~/Content/Template/scripts/module.dynamic-checkout.min.js")',
+                    masonry: '@Url.Content("~/Content/Template/scripts/module.masonry.min.js")',
+                    notifications: '@Url.Content("~/Content/Template/scripts/module.notifications.min.js")',
+                    parallax: '@Url.Content("~/Content/Template/scripts/module.parallax.min.js")',
+                    popup_subscription: '@Url.Content("~/Content/Template/scripts/module.popup-subscription.min.js")',
+                    product_footbar: '@Url.Content("~/Content/Template/scripts/module.product-footbar.min.js")',
+                    products_view: '@Url.Content("~/Content/Template/scripts/module.products-view.min.js")',
+                    range_of_price: '@Url.Content("~/Content/Template/scripts/module.range-of-price.min.js")',
+                    shipping_rates_calculation: '@Url.Content("~/Content/Template/scripts/module.shipping-rates-calculation.min.js")',
+                    sticky_header: '@Url.Content("~/Content/Template/scripts/module.sticky-header.min.js")',
+                    sticky_sidebar: '@Url.Content("~/Content/Template/scripts/module.sticky-sidebar.min.js")',
+                    tabs: '@Url.Content("~/Content/Template/scripts/module.tabs.min.js")',
+                    trigger: '@Url.Content("~/Content/Template/scripts/module.trigger.min.js")',
+                    presentation: '@Url.Content("~/Content/Template/scripts/module.presentation.min.js")',
+                    //sections
+                    header: '@Url.Content("~/Content/Template/scripts/section.header.min.js")',
+                    article_body: '@Url.Content("~/Content/Template/scripts/section.article-body.min.js")',
+                    blog_body: '@Url.Content("~/Content/Template/scripts/section.blog-body.min.js")',
+                    blog_sidebar: '@Url.Content("~/Content/Template/scripts/section.blog-sidebar.min.js")',
+                    carousel_articles: '@Url.Content("~/Content/Template/scripts/section.carousel-articles.min.js")',
+                    carousel_brands: '@Url.Content("~/Content/Template/scripts/section.carousel-brands.min.js")',
+                    carousel_products: '@Url.Content("~/Content/Template/scripts/section.carousel-products.min.js")',
+                    collection_body: '@Url.Content("~/Content/Template/scripts/section.collection-body.min.js")',
+                    collection_head: '@Url.Content("~/Content/Template/scripts/section.collection-head.min.js")',
+                    collection_sidebar: '@Url.Content("~/Content/Template/scripts/section.collection-sidebar.min.js")',
+                    gallery: '@Url.Content("~/Content/Template/scripts/section.gallery.min.js")',
+                    home_builder: '@Url.Content("~/Content/Template/scripts/section.home-builder.min.js")',
+                    list_collections: '@Url.Content("~/Content/Template/scripts/section.list-collections.min.js")',
+                    lookbook: '@Url.Content("~/Content/Template/scripts/section.lookbook.min.js")',
+                    password_page_content: '@Url.Content("~/Content/Template/scripts/section.password-page-content.min.js")',
+                    product: '@Url.Content("~/Content/Template/scripts/section.product.min.js")',
+                    slider_revolution: '@Url.Content("~/Content/Template/scripts/section.slider-revolution.min.js")',
+                    sorting_collections: '@Url.Content("~/Content/Template/scripts/section.sorting-collections.min.js")',
+                    footbar: '@Url.Content("~/Content/Template/scripts/section.footbar.min.js")',
+                    footer: '@Url.Content("~/Content/Template/scripts/section.footer.min.js")',
+                },
+                styles: {
+                    //plugins
+                    plugin_tippy: '@Url.Content("~/Content/Template/styles/plugin.tippy.min.css")',
+                    plugin_fotorama: '@Url.Content("~/Content/Template/styles/plugin.fotorama.min.css")',
+                    plugin_ion_range_slider: '@Url.Content("~/Content/Template/styles/plugin.ion-range-slider.min.css")',
+                    plugin_revolution: '@Url.Content("~/Content/Template/styles/plugin.revolution.min.css")',
+                    plugin_slick: '@Url.Content("~/Content/Template/styles/plugin.slick.min.css")',
+                    //font
+                    text_font: 'https://fonts.googleapis.com/css?family=Archivo',
+                    //global
+                    theme: '@Url.Content("~/Content/Template/styles/theme.min.css")',
+                    theme_05: '@Url.Content("~/Content/Template/styles/theme-05.min.css")',
+                    theme_06: '@Url.Content("~/Content/Template/styles/theme-06.min.css")',
+                    theme_07: '@Url.Content("~/Content/Template/styles/theme-07.min.css")',
+                    theme_08: '@Url.Content("~/Content/Template/styles/theme-08.min.css")',
+                    theme_10: '@Url.Content("~/Content/Template/styles/theme-10.min.css")',
+                    theme_11: '@Url.Content("~/Content/Template/styles/theme-11.min.css")',
+                    theme_12: '@Url.Content("~/Content/Template/styles/theme-12.min.css")',
+                    theme_14: '@Url.Content("~/Content/Template/styles/theme-14.min.css")',
+                    theme_15: '@Url.Content("~/Content/Template/styles/theme-15.min.css")'
+                }
+            },
+            deps: {
+                scripts: {
+                    //plugins
+                    plugin_tippy: ['plugin_popper'],
+                    //global
+                    theme: ['vendor', 'plugin_fotorama'],
+                    //modules
+                    tooltip: ['plugin_tippy'],
+                    collections: ['products_view'],
+                    masonry: ['plugin_masonry'],
+                    product_footbar: ['trigger'],
+                    range_of_price: ['plugin_ion_range_slider', 'collections'],
+                    sticky_sidebar: ['plugin_sticky_sidebar', 'sticky_header'],
+                    tabs: ['plugin_sticky_sidebar', 'sticky_sidebar', 'sticky_header'],
+                    //sections
+                    header: ['sticky_header'],
+                    blog_body: ['masonry'],
+                    blog_sidebar: ['sticky_sidebar'],
+                    collection_sidebar: ['range_of_price'],
+                    gallery: ['plugin_fotorama', 'masonry'],
+                    home_builder: ['plugin_instafeed', 'plugin_revolution_slider', 'parallax'],
+                    list_collections: ['masonry'],
+                    product: ['sticky_sidebar', 'tabs'],
+                    article_body: ['plugin_slick'],
+                    footbar: ['notifications', 'trigger', 'product_footbar']
+                },
+                styles: {
+                    //global
+                    theme: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme2: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme3: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme4: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme5: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme6: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme7: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme8: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme9: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme10: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme11: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme12: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme13: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme14: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick'],
+                    theme15: ['plugin_tippy', 'plugin_fotorama', 'plugin_ion_range_slider', 'plugin_revolution', 'plugin_slick']
+                }
+            },
+            callback: {
+                scripts: {},
+                styles: {}
+            },
+            queue: {
+                scripts: [],
+                styles: []
+            },
+            initials: {
+                scripts: {},
+                styles: {}
+            },
+            loaded: {
+                scripts: {},
+                styles: {}
+            },
+            postload: {
+                scripts: {},
+                styles: {}
+            },
+            postload_offset: 400,
+            require: function (obj) {
+                var namespace;
+
+                switch (obj.type) {
+                    case 'style':
+                        {
+                            namespace = 'styles';
+                            break;
+                        }
+                    case 'script':
+                        {
+                            namespace = 'scripts';
+                            break;
+                        }
+                }
+
+                if (this.settings[namespace][obj.name] && this.settings[namespace][obj.name].postload) {
+                    this.postload[namespace][obj.name] = true;
+                } else {
+                    this.queue[namespace].push(obj.name);
+                }
+
+                this.initials[namespace][obj.name] = true;
+            },
+            load: function () {
+                var _ = this,
+                    namespace,
+                    i;
+
+                for (namespace in this.main) {
+                    for (i = this.main[namespace].length - 1; i >= 0; i--) {
+                        this.initials[namespace][this.main[namespace][i]] = true;
+                        this.queue[namespace].unshift(this.main[namespace][i]);
+                    }
+                }
+
+                function load_deps(namespace, name, j, callback) {
+                    if (j < _.deps[namespace][name].length) {
+                        if (_.initials[namespace][_.deps[namespace][name][j]]) {
+                            delete _.initials[namespace][_.deps[namespace][name][j]];
+
+                            _.loadTag(namespace, _.deps[namespace][name][j], function () {
+                                j++;
+                                load_deps(namespace, name, j, callback);
+                            });
+                        } else {
+                            j++;
+                            load_deps(namespace, name, j, callback);
+                        }
+                    } else {
+                        if (callback) {
+                            callback();
+                        }
+                    }
+                };
+
+                function iteration(namespace, i, callback) {
+                    var name = _.queue[namespace][i];
+
+                    if (i < _.queue[namespace].length && !_.initials[namespace][name]) {
+                        i++;
+                        iteration(namespace, i, callback);
+
+                        return;
+                    }
+
+                    function load_deps_callback() {
+                        delete _.initials[namespace][name];
+
+                        _.loadTag(namespace, name, function () {
+                            i++;
+                            iteration(namespace, i, callback);
+                        });
+                    };
+
+                    if (i < _.queue[namespace].length) {
+                        if (_.checkDeps(namespace, name)) {
+                            load_deps_callback();
+                        } else {
+                            load_deps(namespace, name, 0, load_deps_callback);
+                        }
+                    } else if (callback) {
+                        callback();
+                    }
+                };
+
+                iteration('styles', 0, function () {
+                    iteration('scripts', 0);
+                });
+
+                function onPostload(namespace, name, elems, j) {
+                    for (namespace in _.postload) {
+                        for (name in _.postload[namespace]) {
+                            elems = document.querySelectorAll('[data-postload="' + name + '"]');
+
+                            for (j = 0; j < elems.length; j++) {
+                                if (elems[j].getBoundingClientRect().top < window.innerHeight + _.postload_offset) {
+                                    _.queue[namespace].push(name);
+                                    delete _.postload[namespace][name];
+                                    continue;
+                                }
+                            }
+                        }
+                    }
+
+                    iteration('styles', 0, function () {
+                        iteration('scripts', 0);
+                    });
+                };
+
+                window.addEventListener('load', function () {
+                    onPostload();
+
+                    window.addEventListener('scroll', onPostload);
+                });
+            },
+            checkDeps: function (namespace, name) {
+                var deps = this.deps[namespace][name],
+                    clear_deps = true,
+                    i;
+
+                if (deps) {
+                    for (i = 0; i < deps.length; i++) {
+                        if (!this.loaded[namespace][deps[i]] && this.initials[namespace][deps[i]] !== undefined) {
+                            clear_deps = false;
+                            break;
+                        }
+                    }
+                }
+
+                return clear_deps;
+            },
+            loadTag: function (namespace, name, callback) {
+                var _ = this,
+                    tag,
+                    onload;
+
+                if (document.querySelectorAll('[data-loader-name="' + namespace + '_' + name + '"]').length) {
+                    /*console.log('double loading');*/
+                    return;
+                }
+
+                onload = function () {
+                    _.loaded[namespace][name] = true;
+
+                    if (_.settings[namespace][name]) {
+                        if (_.settings[namespace][name].loaded_class) {
+                            document.getElementsByTagName('html')[0].classList.add(_.settings[namespace][name].loaded_class);
+                        }
+                    }
+
+                    if (callback) {
+                        if (_.callback[namespace][name]) {
+                            _.callback[namespace][name](_);
+                        }
+
+                        callback();
+                    }
+
+                    //console.debug('loaded:', namespace, name);
+                };
+
+                switch (namespace) {
+                    case 'styles':
+                        {
+                            tag = this.buildStyle(name, onload);
+                            break;
+                        }
+                    case 'scripts':
+                        {
+                            tag = this.buildScript(name, onload);
+                            break;
+                        }
+                }
+
+                tag.setAttribute('data-loader-name', namespace + '_' + name);
+
+                document.head.insertBefore(tag, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
+            },
+            buildScript: function (name, onload) {
+                var tag = document.createElement('script');
+
+                tag.onload = onload;
+
+                tag.async = true;
+                tag.src = this.includes.scripts[name];
+
+                return tag;
+            },
+            buildStyle: function (name, onload) {
+                var tag = document.createElement('link');
+
+                tag.onload = onload;
+
+                tag.rel = 'stylesheet';
+                tag.href = this.includes.styles[name];
+
+                return tag;
+            }
+        };
+
+        window.page = {
+            default: {}
+        };
+    </script>
+</head>
+<body id="index" class="template-index theme-css-animate" data-currency-multiple="true">
+    <div id="theme-section-header" class="theme-section">
+        <div data-section-id="header" data-section-type="header">
+            <header id="header" class="header position-lg-relative js-header-sticky" data-js-sticky="desktop_and_mobile"
+                    data-js-desktop-sticky-sidebar="true">
+
+                <div class="header__content" data-js-mobile-sticky>
+                    <div class="header__line-top position-relative d-flex px-10 px-lg-0 py-lg-2">
+                        <div class="container d-flex align-items-center">
+                            <span class="header__btn-menu d-flex align-items-center d-lg-none mr-20 cursor-pointer js-popup-button"
+                                  data-js-popup-button="navigation">
+                                <i>
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-191"
+                                         viewBox="0 0 24 24">
+                                        <path d="M3.438 5.479h17.375v1.25H3.438zM3.438 11.104h17.375v1.25H3.438zM3.438 16.729h17.375v1.25H3.438z" />
+                                    </svg>
+                                </i>
+                            </span>
+
+                            <div class="header__sidebar d-flex align-items-center ml-auto">
+
+                                <a href="account"
+                                   class="header__btn-account d-flex align-items-center position-relative ml-25 ml-lg-15 js-popup-button"
+                                   data-js-popup-button="account"
+                                   data-js-tooltip
+                                   data-tippy-content="Account"
+                                   data-tippy-placement="bottom"
+                                   data-tippy-distance="6">
+                                    <i>
+                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                             class="icon icon-theme-201" viewBox="0 0 24 24">
+                                            <path d="M4.023 22.167h-1.25v-.625c0-1.042.163-2.034.488-2.979a9.524 9.524 0 0 1 1.357-2.588 9.366 9.366 0 0 1 2.061-2.031 9.58 9.58 0 0 1 2.598-1.328 5.588 5.588 0 0 1-1.992-2.002 5.413 5.413 0 0 1-.762-2.822c0-.781.146-1.51.439-2.188A5.707 5.707 0 0 1 9.96 2.606c.677-.293 1.406-.439 2.188-.439s1.51.146 2.188.439a5.724 5.724 0 0 1 2.998 2.998c.293.677.439 1.406.439 2.188 0 1.029-.254 1.97-.762 2.822a5.588 5.588 0 0 1-1.992 2.002 9.623 9.623 0 0 1 2.598 1.328 9.41 9.41 0 0 1 3.418 4.619c.325.944.488 1.937.488 2.979v.625h-1.25v-.625c0-1.12-.212-2.174-.635-3.164A8.172 8.172 0 0 0 17.9 15.79a8.172 8.172 0 0 0-2.588-1.738 7.966 7.966 0 0 0-3.164-.635c-1.12 0-2.175.212-3.164.635a8.15 8.15 0 0 0-2.588 1.738 8.155 8.155 0 0 0-1.738 2.588 7.966 7.966 0 0 0-.635 3.164v.625zM8.115 9.491a4.364 4.364 0 0 0 2.334 2.334 4.28 4.28 0 0 0 1.699.342 4.375 4.375 0 0 0 4.033-2.676 4.28 4.28 0 0 0 .342-1.699 4.28 4.28 0 0 0-.342-1.699 4.392 4.392 0 0 0-.938-1.396 4.4 4.4 0 0 0-1.396-.937 4.284 4.284 0 0 0-1.699-.342c-.599 0-1.166.114-1.699.342-.534.228-1 .541-1.396.937-.397.397-.71.863-.938 1.396a4.28 4.28 0 0 0-.342 1.699c0 .599.114 1.165.342 1.699z" />
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="header__logo header__logo--sticky-hidden d-flex align-items-center w-100"
+                                 style="max-width: 64px;">
+                                <h1 class="logo h6 w-100 m-0 text-hide" itemscope itemtype="http://schema.org/Organization"
+                                    data-js-sticky-replace-element="logo">
+                                    <a href="#" itemprop="url"
+                                       class="d-block text-hide">
+                                        <svg version="1.0" style="padding:3;" xmlns="http://www.w3.org/2000/svg"
+                                             width="64.000000pt" height="27.000000pt" viewBox="0 0 64.000000 27.000000"
+                                             preserveAspectRatio="xMidYMid meet">
+
+                                            <g transform="translate(0.000000,27.000000) scale(0.008060,-0.011538)"
+                                               fill="#000000" stroke="none">
+                                                <path d="M1275 1988 c-28 -100 -37 -234 -44 -649 -9 -592 4 -944 37 -995 8
+											-13 284 -25 303 -13 10 6 8 36 -9 141 -35 215 -43 301 -50 520 -12 366 7 653
+											59 916 17 82 19 105 9 117 -10 12 -41 15 -151 15 l-138 0 -16 -52z" />
+                                                <path d="M6259 2024 c-51 -15 -127 -77 -158 -127 -11 -18 -29 -73 -41 -121
+											-11 -48 -27 -100 -35 -116 -15 -29 -59 -50 -105 -50 -15 0 -36 -10 -50 -25
+											-20 -21 -24 -38 -28 -111 -3 -52 -1 -89 6 -96 7 -7 24 -5 56 7 42 16 47 16 71
+											1 13 -9 27 -26 30 -39 2 -12 6 -229 8 -482 3 -369 6 -468 18 -499 l14 -39 148
+											0 c88 0 152 4 158 10 7 7 1 98 -20 284 -36 318 -51 560 -40 647 12 110 52 142
+											147 120 73 -16 82 -4 82 107 0 106 -9 115 -108 115 -62 0 -73 3 -82 21 -15 27
+											-5 65 26 107 24 30 29 32 77 30 l52 -3 18 55 c10 30 19 86 20 124 2 65 0 71
+											-23 83 -33 17 -182 16 -241 -3z" />
+                                                <path d="M707 1992 c-25 -5 -53 -66 -71 -152 -54 -263 -62 -1212 -12 -1425 22
+											-90 23 -91 224 -87 l172 3 0 25 c0 13 -11 80 -25 147 -72 356 -88 781 -41
+											1082 9 55 30 164 48 243 22 102 28 146 20 154 -10 10 -272 18 -315 10z" />
+                                                <path d="M6993 1890 c-73 -19 -118 -39 -164 -71 -22 -15 -29 -32 -39 -86 -6
+											-36 -18 -79 -26 -95 -14 -26 -18 -28 -78 -28 -46 0 -70 -5 -85 -17 -25 -21
+											-40 -76 -41 -149 0 -67 14 -80 67 -59 54 22 88 8 102 -40 6 -23 6 -106 -1
+											-243 -16 -308 10 -656 56 -766 16 -38 17 -38 59 -34 45 5 196 76 243 113 l28
+											22 -32 71 c-17 39 -41 117 -52 173 -25 124 -41 412 -30 543 13 152 45 188 147
+											165 47 -11 56 -10 71 4 22 23 29 151 10 187 -12 23 -21 25 -93 30 -79 5 -80 5
+											-83 33 -2 16 8 61 23 101 29 80 32 159 5 163 -8 1 -47 -6 -87 -17z" />
+                                                <path d="M2974 1629 c-56 -13 -141 -66 -177 -111 -32 -40 -45 -107 -33 -173
+											10 -51 73 -115 115 -115 28 0 34 5 55 53 26 59 46 80 99 102 72 30 158 12 219
+											-46 36 -34 45 -59 38 -109 -3 -30 -36 -48 -120 -69 -183 -45 -336 -155 -402
+											-289 -31 -64 -33 -72 -33 -182 0 -109 2 -118 29 -168 53 -95 136 -148 278
+											-178 89 -19 494 -16 542 4 28 12 28 13 23 75 -4 34 -11 211 -16 392 -12 410
+											-23 509 -60 591 -74 159 -210 235 -414 233 -56 -1 -120 -5 -143 -10z m315
+											-688 c39 -39 40 -278 2 -331 -51 -70 -197 -42 -258 49 -29 43 -31 117 -3 170
+											50 99 205 166 259 112z" />
+                                                <path d="M4077 1619 c-76 -26 -123 -56 -171 -109 -58 -65 -79 -120 -84 -225
+											-5 -120 19 -188 93 -260 50 -49 84 -68 296 -169 113 -53 149 -89 149 -146 0
+											-46 -37 -96 -87 -116 -41 -18 -146 -17 -196 0 -91 33 -172 123 -213 235 -10
+											28 -22 51 -27 51 -15 0 -46 -84 -59 -158 -33 -192 71 -346 271 -406 68 -20
+											226 -21 298 -2 125 33 224 109 275 210 28 53 32 74 36 158 9 207 -58 290 -359
+											444 -164 84 -219 130 -219 184 0 80 138 115 247 63 20 -9 54 -41 77 -70 51
+											-66 76 -69 128 -15 51 52 98 131 98 163 0 54 -123 143 -243 175 -79 21 -239
+											18 -310 -7z" />
+                                                <path d="M5122 1616 c-160 -60 -277 -220 -323 -442 -28 -131 -22 -349 11 -464
+											65 -226 227 -387 410 -408 254 -29 459 126 540 408 33 115 39 333 11 464 -46
+											226 -169 390 -333 445 -89 30 -230 29 -316 -3z m243 -235 c109 -50 165 -173
+											165 -361 0 -162 -47 -286 -129 -345 -38 -27 -51 -30 -116 -30 -65 0 -78 3
+											-116 30 -82 59 -129 183 -129 345 0 188 56 311 165 361 51 24 109 24 160 0z" />
+                                                <path d="M1820 1610 l-125 -5 -3 -109 c-7 -260 70 -453 263 -664 43 -48 75
+											-91 73 -100 -4 -21 -60 -59 -107 -72 -20 -6 -72 -14 -116 -17 -117 -8 -115 -6
+											-115 -185 0 -175 -3 -171 119 -156 388 47 759 516 800 1012 9 118 6 275 -6
+											286 -7 7 -181 15 -250 11 -29 -1 -35 -26 -23 -92 40 -207 -28 -539 -111 -539
+											-27 0 -112 101 -157 188 -61 116 -76 186 -67 302 7 100 8 131 3 135 -10 8 -68
+											10 -178 5z" />
+                                            </g>
+                                        </svg>
+
+                                        Ilyasoft-demo
+                                    </a>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__border border-bottom d-none d-lg-block"></div>
+                    <div data-js-desktop-sticky>
+                        <div class="header__line-bottom position-relative d-lg-flex py-lg-6">
+                            <div class="header__sticky-logo d-none align-items-lg-center w-100 h-100 header__sticky-logo--displaced position-absolute top-0 left-0 py-6 ml-15"
+                                 data-js-sticky-replace-here="logo" style="max-width: 64px;"></div>
+                            <div class="container d-lg-flex">
+                                <div class="header__nav d-none d-lg-flex" data-js-position-desktop="menu">
+                                    <nav class="menu js-menu js-position" data-js-position-name="menu">
+                                        <div class="menu__panel menu__list menu__level-01 d-flex flex-column flex-lg-row flex-lg-wrap menu__panel--bordered">
+                                            <div class="menu__curtain d-none position-lg-absolute"></div>
+                                            <div class="menu__item menu__item--has-children">
+                                                <a href="#"
+                                                   class="d-flex align-items-center px-lg-7">
+                                                    <span>Home</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu__item menu__item--has-children position-lg-relative">
+
+                                                <a href="#"
+                                                   class="d-flex align-items-center px-lg-7">
+                                                    <span>Setting</span> <i class="d-none d-lg-inline position-lg-relative">
+                                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                                             class="icon icon-theme-229" viewBox="0 0 24 24">
+                                                            <path d="M11.783 14.088l-3.75-3.75a.652.652 0 0 1-.176-.449c0-.169.059-.319.176-.449a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176l3.301 3.32 3.301-3.32a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176.117.13.176.28.176.449a.652.652 0 0 1-.176.449l-3.75 3.75a.877.877 0 0 1-.215.127.596.596 0 0 1-.468 0 .841.841 0 0 1-.215-.127z" />
+                                                        </svg>
+                                                    </i><i class="d-lg-none ml-auto">
+                                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                                             class="icon icon-theme-231" viewBox="0 0 24 24">
+                                                            <path d="M10.806 7.232l3.75 3.75c.117.13.176.28.176.449a.652.652 0 0 1-.176.449l-3.75 3.75a.877.877 0 0 1-.215.127.596.596 0 0 1-.468 0 .877.877 0 0 1-.215-.127.652.652 0 0 1-.176-.449c0-.169.059-.319.176-.449l3.32-3.301L9.907 8.13a.652.652 0 0 1-.176-.449c0-.169.059-.319.176-.449a.652.652 0 0 1 .449-.176c.169 0 .319.058.45.176z" />
+                                                        </svg>
+                                                    </i>
+                                                </a>
+
+                                                <div class="menu__dropdown d-lg-none position-lg-absolute">
+                                                    <div class="menu__list menu__list--styled menu__level-02 menu__level-02 p-lg-20">
+                                                        <div class="menu__item menu__back d-lg-none">
+                                                            <a href="#">Setting</a>
+                                                        </div>
+                                                        <div class="menu__item">
+                                                            <a href="@Url.Content("~/User/Login")"
+                                                               class="d-flex align-items-center px-lg-5"><span>Login</span></a>
+                                                        </div>
+                                                        <div class="menu__item">
+                                                            <a href="@Url.Content("~/User/Register")"
+                                                               class="d-flex align-items-center px-lg-5"><span>Register</span></a>
+                                                        </div>
+                                                        <div class="menu__item">
+                                                            <a href="other-account.html"
+                                                               class="d-flex align-items-center px-lg-5"><span>Account</span></a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                    </nav>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="header__border border-bottom d-none d-lg-block"></div>
+                    </div>
+                    <div class="header__border border-bottom d-lg-none"></div>
+                </div>
+            </header>
+        </div>
+        <script>
+            Loader.require({
+                type: "script",
+                name: "sticky_header"
+            });
+            Loader.require({
+                type: "script",
+                name: "header"
+            });
+        </script>
+    </div>
+    <main id="MainContent">
+        @RenderBody()
+    </main>
+
+    <div id="theme-section-popup" class="theme-section">
+        <div class="popup fixed-stretch d-none js-popup" tabindex="0">
+            <div class="popup__bg fixed-stretch cursor-pointer pointer-events-none" data-js-popup-bg></div>
+            <div class="popup__body position-relative d-none show visible" data-js-popup-name="sidebar-blog" data-popup-left="">
+                <div class="popup-sidebar popup-sidebar--width-md py-30 px-20" data-popup-content="">
+                    <div class="popup-sidebar__head">
+                        <div class="popup-sidebar__close d-flex align-items-center cursor-pointer" data-js-popup-close="">
+                            <i class="mr-lg-5">
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-164"
+                                     viewBox="0 0 24 24">
+                                    <path d="M19.583 4.965a.65.65 0 0 1-.176.449l-6.445 6.426 6.445 6.426c.117.131.176.28.176.449a.65.65 0 0 1-.176.449.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127l-6.426-6.445-6.426 6.445a.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449l6.445-6.426-6.445-6.426a.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176l6.426 6.445 6.426-6.445a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176.117.13.176.28.176.449z"></path>
+                                </svg>
+                            </i> <span class="d-none d-lg-inline">CLOSE</span>
+                        </div>
+                    </div>
+                    <div class="popup-sidebar__content pt-50" data-js-position-mobile="sidebar-blog"></div>
+                </div>
+            </div>
+
+            <div class="popup__body position-relative d-none justify-content-end" data-js-popup-name="account"
+                 data-popup-right>
+                <div class="popup-account py-25 px-20 js-popup-account" data-popup-content>
+                    <div class="popup-account__login">
+                        <div class="popup-account__head d-flex align-items-center mb-10">
+                            <h5 class="m-0">MY ACCOUNT</h5>
+                            <i class="popup-account__close ml-auto cursor-pointer" data-js-popup-close>
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-164"
+                                     viewBox="0 0 24 24">
+                                    <path d="M19.583 4.965a.65.65 0 0 1-.176.449l-6.445 6.426 6.445 6.426c.117.131.176.28.176.449a.65.65 0 0 1-.176.449.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127l-6.426-6.445-6.426 6.445a.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449l6.445-6.426-6.445-6.426a.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176l6.426 6.445 6.426-6.445a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176.117.13.176.28.176.449z" />
+                                </svg>
+                            </i>
+                        </div>
+                        @{
+                            Html.RenderPartial("~/Views/User/Login_Partial.cshtml");
+                        }
+                        <hr class="my-15" />
+                        <div class="popup-account__head d-flex align-items-center mb-10">
+                            <h5 class="m-0">SIGN UP</h5>
+                        </div>
+                        <div>
+                            <p class="h6 mb-15">Enjoy the benefits of registering:</p>
+                            <ul class="mb-20">
+                                <li class="mb-15">Order: view Order History, track and manage purchases and returns</li>
+                                <li class="mb-15">
+                                    Address Book and Card Wallet: safely store delivery and payment details
+                                    for faster checkout
+                                </li>
+                                <li class="mb-15">
+                                    Saved for later: wish list your preferred items and track their
+                                    availability
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="register.html"
+                           class="btn btn--full btn--secondary mb-20 js-popup-account-show-sign-up">Sign up now!</a>
+                    </div>
+                    <div class="popup-account__sign-up d-none-important">
+                        <div class="popup-account__head d-flex align-items-center mb-10">
+                            <h5 class="m-0">SIGN UP</h5>
+                            <i class="popup-account__close ml-auto cursor-pointer" data-js-popup-close>
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-164"
+                                     viewBox="0 0 24 24">
+                                    <path d="M19.583 4.965a.65.65 0 0 1-.176.449l-6.445 6.426 6.445 6.426c.117.131.176.28.176.449a.65.65 0 0 1-.176.449.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127l-6.426-6.445-6.426 6.445a.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449l6.445-6.426-6.445-6.426a.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176l6.426 6.445 6.426-6.445a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176.117.13.176.28.176.449z" />
+                                </svg>
+                            </i>
+                        </div>
+                        @{
+                            Html.RenderPartial("~/Views/User/UserRegister_Partial.cshtml", new eCommerceUI.Models.UserMV());
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="theme-section-footer" class="theme-section">
+        <div data-section-id="footer" data-section-type="footer">
+
+
+            <footer id="footer" class="footer mt-0  text-center text-lg-left js-footer" data-js-footer-fixed>
+                <div class="footer__border border-top d-none d-lg-block"></div>
+                <div class="footer__content pt-lg-55 pb-lg-50">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer__border border-top w-100 mb-45 d-lg-none"></div>
+                            <div class="col-lg-12">
+                                <div class="footer__subscription row align-items-center mb-25">
+                                    <div class="col-lg-6 mb-10 mb-lg-0">
+                                        <h5 class="mb-10 text-uppercase">Newsletter subscription</h5>
+                                        <p class="mb-10">
+                                            Sign up for Ilyasoft updates to receive information about new
+                                            arrivals, future events and specials.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <form action="#"
+                                              method="post" class="d-flex flex-column flex-lg-row mb-10" target="_blank">
+                                            <input type="email" name="EMAIL" id="FooterSubscribe"
+                                                   class="mb-10 mb-lg-0 mr-lg-10" placeholder="Enter Your Email Address"
+                                                   required="required"><input type="submit" class="btn px-lg-20"
+                                                                              value="SUBSCRIBE!">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="footer__menus row flex-column flex-lg-row">
+                                    <div class="footer__border border-top d-lg-none"></div>
+                                    <div class="col-lg">
+                                        <div class="footer__section" data-js-accordion="only-mobile">
+                                            <div class="footer__section-head position-relative" data-js-accordion-button>
+                                                <h5 class="py-10 py-lg-0 mb-0 mb-lg-10 text-uppercase">Shop</h5>
+                                                <div class="footer__section-btn d-flex d-lg-none position-absolute align-items-center justify-content-center">
+                                                    <i>
+                                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                                             class="icon icon-theme-188" viewBox="0 0 24 24">
+                                                            <path d="M7.158 12.206a.598.598 0 0 1-.186-.439.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186h3.75v-3.75a.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439v3.75h3.75c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186h-3.75v3.75a.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186.597.597 0 0 1-.439-.186.598.598 0 0 1-.186-.439v-3.75h-3.75a.598.598 0 0 1-.439-.186z" />
+                                                        </svg>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div class="footer__section-content d-none d-lg-block"
+                                                 data-js-accordion-content>
+                                                <ul class="list-unstyled pb-15 pb-lg-0">
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">
+                                                            New
+                                                            In
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">
+                                                            Sale &
+                                                            Special Offers
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0"><a href="#">Women’s</a></li>
+                                                    <li class="py-5 py-lg-0"><a href="#">Men’s</a></li>
+                                                    <li class="py-5 py-lg-0"><a href="#">Shoes</a></li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">
+                                                            Bags &
+                                                            Accessories
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">
+                                                            Top
+                                                            Brands
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">Lookbook</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer__border border-top d-lg-none"></div>
+                                    <div class="col-lg">
+                                        <div class="footer__section" data-js-accordion="only-mobile">
+                                            <div class="footer__section-head position-relative" data-js-accordion-button>
+                                                <h5 class="py-10 py-lg-0 mb-0 mb-lg-10 text-uppercase">Information</h5>
+                                                <div class="footer__section-btn d-flex d-lg-none position-absolute align-items-center justify-content-center">
+                                                    <i>
+                                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                                             class="icon icon-theme-188" viewBox="0 0 24 24">
+                                                            <path d="M7.158 12.206a.598.598 0 0 1-.186-.439.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186h3.75v-3.75a.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439v3.75h3.75c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186h-3.75v3.75a.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186.597.597 0 0 1-.439-.186.598.598 0 0 1-.186-.439v-3.75h-3.75a.598.598 0 0 1-.439-.186z" />
+                                                        </svg>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div class="footer__section-content d-none d-lg-block"
+                                                 data-js-accordion-content>
+                                                <ul class="list-unstyled pb-15 pb-lg-0">
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">About us</a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="page-customer-service.html">
+                                                            Customer
+                                                            Service
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0"><a href="#">Blog</a></li>
+                                                    <li class="py-5 py-lg-0"><a href="#">Page 404</a></li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">
+                                                            Sizing
+                                                            Guide
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">FAQs</a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">Contact Us</a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">Documentation</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer__border border-top d-lg-none"></div>
+                                    <div class="col-lg">
+                                        <div class="footer__section" data-js-accordion="only-mobile">
+                                            <div class="footer__section-head position-relative" data-js-accordion-button>
+                                                <h5 class="py-10 py-lg-0 mb-0 mb-lg-10 text-uppercase">Order</h5>
+                                                <div class="footer__section-btn d-flex d-lg-none position-absolute align-items-center justify-content-center">
+                                                    <i>
+                                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                                             class="icon icon-theme-188" viewBox="0 0 24 24">
+                                                            <path d="M7.158 12.206a.598.598 0 0 1-.186-.439.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186h3.75v-3.75a.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439v3.75h3.75c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186h-3.75v3.75a.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186.597.597 0 0 1-.439-.186.598.598 0 0 1-.186-.439v-3.75h-3.75a.598.598 0 0 1-.439-.186z" />
+                                                        </svg>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div class="footer__section-content d-none d-lg-block"
+                                                 data-js-accordion-content>
+                                                <ul class="list-unstyled pb-15 pb-lg-0">
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">My Account</a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">
+                                                            View
+                                                            Bag
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">
+                                                            Privacy
+                                                            Policy
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-5 py-lg-0">
+                                                        <a href="#">
+                                                            Cookie
+                                                            Policy
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="footer__border border-top row d-lg-none"></div>
+                                <div class="footer__custom-html">
+                                    <div class="footer__section" data-js-accordion="only-mobile">
+                                        <div class="footer__section-head position-relative" data-js-accordion-button>
+                                            <h5 class="py-10 py-lg-0 mb-0 mb-lg-10 text-uppercase">Here to help</h5>
+                                            <div class="footer__section-btn d-flex d-lg-none position-absolute align-items-center justify-content-center">
+                                                <i>
+                                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                                         class="icon icon-theme-188" viewBox="0 0 24 24">
+                                                        <path d="M7.158 12.206a.598.598 0 0 1-.186-.439.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186h3.75v-3.75a.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439v3.75h3.75c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186h-3.75v3.75a.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186.597.597 0 0 1-.439-.186.598.598 0 0 1-.186-.439v-3.75h-3.75a.598.598 0 0 1-.439-.186z" />
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div class="footer__section-content d-none d-lg-block" data-js-accordion-content>
+
+
+                                            <div class="d-flex d-lg-block flex-column align-items-center pt-10 pt-lg-0 pb-15 pb-lg-0">
+                                                <p class="mb-15">
+                                                    Have a question? You may find an answer in our <a href="#"
+                                                                                                      class="btn-link">FAQs</a>.<br>But you can also contact us:
+                                                </p>
+                                                <h6 class="mb-15">Customer Services</h6>
+                                                <p class="d-flex justify-content-center justify-content-lg-start mb-15">
+                                                    <i class="mr-10">
+                                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                                             class="icon icon-theme-197" viewBox="0 0 24 24">
+                                                            <path d="M17.625 21.729c-2.148 0-4.174-.41-6.074-1.23a15.799 15.799 0 0 1-4.971-3.35c-1.413-1.413-2.529-3.069-3.35-4.971S2 8.253 2 6.104c0-.078.016-.156.049-.234a.864.864 0 0 1 .127-.215L5.301 2.53a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176l4.375 4.375c.117.13.176.28.176.449s-.059.319-.176.449l-2.695 2.676 5.371 5.371 2.676-2.695a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176l4.375 4.375c.117.13.176.28.176.449s-.059.319-.176.449l-3.125 3.125a.91.91 0 0 1-.215.127.596.596 0 0 1-.234.049zM5.75 3.858l-2.5 2.5c.039 1.927.433 3.74 1.182 5.439a14.528 14.528 0 0 0 3.037 4.463c1.275 1.276 2.764 2.288 4.463 3.037s3.512 1.143 5.439 1.182l2.5-2.5-3.496-3.496-2.676 2.695a.654.654 0 0 1-.449.176.65.65 0 0 1-.449-.176l-6.25-6.25c-.117-.13-.176-.28-.176-.449s.059-.319.176-.449l2.695-2.676L5.75 3.858z" />
+                                                        </svg>
+                                                    </i>Call Us: +92-314-307-6781
+                                                </p>
+                                                <p class="d-flex justify-content-center justify-content-lg-start mb-15">
+                                                    <i class="mr-10">
+                                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                                             class="icon icon-theme-234" viewBox="0 0 24 24">
+                                                            <path d="M16.053 3.083a10.212 10.212 0 0 1 3.174 2.148c.905.905 1.621 1.963 2.148 3.174s.791 2.507.791 3.887-.264 2.676-.791 3.887-1.244 2.269-2.148 3.174c-.905.905-1.963 1.621-3.174 2.148s-2.507.791-3.887.791-2.676-.264-3.887-.791-2.269-1.243-3.174-2.148c-.905-.905-1.621-1.963-2.148-3.174s-.791-2.506-.791-3.887c0-1.38.264-2.676.791-3.887S4.2 6.136 5.105 5.231c.906-.905 1.964-1.621 3.175-2.148s2.506-.791 3.887-.791c1.38 0 2.675.263 3.886.791zm-3.261 17.92a8.722 8.722 0 0 0 5.557-2.529 8.728 8.728 0 0 0 2.529-5.557h-2.461a.598.598 0 0 1-.439-.186.6.6 0 0 1-.186-.439.6.6 0 0 1 .186-.439.6.6 0 0 1 .439-.186h2.461a8.742 8.742 0 0 0-2.529-5.557 8.742 8.742 0 0 0-5.557-2.529v2.461a.598.598 0 0 1-.186.439.601.601 0 0 1-.439.186.598.598 0 0 1-.439-.186.6.6 0 0 1-.186-.439V3.581A8.728 8.728 0 0 0 5.985 6.11a8.722 8.722 0 0 0-2.529 5.557h2.461a.6.6 0 0 1 .439.186.601.601 0 0 1 .186.439.598.598 0 0 1-.186.439.601.601 0 0 1-.439.186H3.456a8.614 8.614 0 0 0 .781 3.047c.442.951 1.025 1.787 1.748 2.51s1.559 1.306 2.51 1.748c.95.443 1.966.703 3.047.781v-2.461a.6.6 0 0 1 .186-.439.6.6 0 0 1 .439-.186.6.6 0 0 1 .439.186.601.601 0 0 1 .186.439v2.461zm3.564-9.151a.601.601 0 0 1 .186.439.598.598 0 0 1-.186.439.601.601 0 0 1-.439.186h-3.75a.58.58 0 0 1-.283-.068.736.736 0 0 1-.225-.186l-3.75-5a.56.56 0 0 1-.117-.458.609.609 0 0 1 .254-.42.57.57 0 0 1 .459-.117.61.61 0 0 1 .419.254l3.555 4.746h3.438c.169 0 .315.062.439.185z" />
+                                                        </svg>
+                                                    </i><span class="text-left">Mon-Fri: 9:00 am - 6:00 pm<br>Sat: 9:00 am - 4:00 pm<br>Sun: 9:00 am - 2:00 pm</span>
+                                                </p>
+                                                <p class="d-flex justify-content-center justify-content-lg-start mb-15">
+                                                    <i class="mr-10">
+                                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                                             class="icon icon-theme-153" viewBox="0 0 24 24">
+                                                            <path d="M22.072 4.807c.013.026.02.049.02.068v.068c.013.026.02.046.02.059v13.75c0 .17-.062.316-.186.439a.601.601 0 0 1-.439.186H2.736a.598.598 0 0 1-.439-.186.598.598 0 0 1-.186-.439V5.002c0-.013.006-.032.02-.059v-.068c0-.019.006-.042.02-.068a.125.125 0 0 0 .029-.049.444.444 0 0 1 .029-.068.145.145 0 0 0 .02-.059c.013 0 .022-.003.029-.01a.04.04 0 0 0 .01-.029l.038-.039a.214.214 0 0 1 .059-.039l.039-.039c.013-.013.032-.02.059-.02a.125.125 0 0 1 .049-.029.184.184 0 0 1 .049-.01c.026-.013.049-.02.068-.02s.042-.006.068-.02H21.525c.026.014.049.02.068.02s.042.007.068.02c.013 0 .029.004.049.01.02.007.036.017.049.029.026 0 .045.007.059.02l.039.039a.286.286 0 0 1 .059.039l.039.039c0 .014.003.023.01.029.006.007.016.01.029.01 0 .014.006.033.02.059a.587.587 0 0 0 .039.068.102.102 0 0 1 .019.049zm-1.211 13.32V6.232l-8.379 6.152a.57.57 0 0 1-.176.088.659.659 0 0 1-.566-.088L3.361 6.232v11.895h17.5zM4.65 5.627l7.461 5.469 7.461-5.469H4.65z" />
+                                                        </svg>
+                                                    </i><a href="mailto:projects@ilyasoft.net" class="btn-link">
+                                                        Send us an
+                                                        email
+                                                    </a>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-block">
+                                <div class="footer__social-media">
+                                    <h5 class="d-none d-lg-block mb-10 text-uppercase">
+                                        Follow
+                                        us
+                                    </h5>
+                                    <div class="social-media d-flex flex-wrap flex-lg-column align-items-lg-start justify-content-center justify-content-lg-start">
+
+
+                                        <a href="https://www.facebook.com/" target="_blank"
+                                           class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                            <i class="mr-3">
+                                                <svg aria-hidden="true" focusable="false" role="presentation"
+                                                     class="icon icon-social-facebook" viewBox="0 0 264 512">
+                                                    <path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" />
+                                                </svg>
+                                            </i> <span class="d-none d-lg-inline">Facebook</span>
+                                        </a><a href="https://wa.me/message/D3GOAYGEMBDVJ1" target="_blank"
+                                               class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                            <i class="mr-3">
+                                                <svg aria-hidden="true" focusable="false" role="presentation"
+                                                     class="icon icon-social-twitter" viewBox="0 0 512 512">
+                                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                                </svg>
+                                            </i> <span class="d-none d-lg-inline">Twitter</span>
+                                        </a><a href="https://wa.me/message/D3GOAYGEMBDVJ1" target="_blank"
+                                               class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                            <i class="mr-3">
+                                                <svg aria-hidden="true" focusable="false" role="presentation"
+                                                     class="icon icon-social-google" viewBox="0 0 640 512">
+                                                    <path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z" />
+                                                </svg>
+                                            </i> <span class="d-none d-lg-inline">Google</span>
+                                        </a><a href="https://wa.me/message/D3GOAYGEMBDVJ1" target="_blank"
+                                               class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                            <i class="mr-3">
+                                                <svg aria-hidden="true" focusable="false" role="presentation"
+                                                     class="icon icon-social-instagram" viewBox="0 0 448 512">
+                                                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                                </svg>
+                                            </i> <span class="d-none d-lg-inline">Instagram</span>
+                                        </a><a href="https://wa.me/message/D3GOAYGEMBDVJ1" target="_blank"
+                                               class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                            <i class="mr-3">
+                                                <svg aria-hidden="true" focusable="false" role="presentation"
+                                                     class="icon icon-social-pinterest" viewBox="0 0 496 512">
+                                                    <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                                                </svg>
+                                            </i> <span class="d-none d-lg-inline">Pinterest</span>
+                                        </a>
+                                        <a href="https://www.youtube.com/c/CodeWithIlyasoft" target="_blank"
+                                           class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                            <i class="mr-3">
+                                                <svg aria-hidden="true" focusable="false" role="presentation"
+                                                     class="icon icon-social-youtube" viewBox="0 0 576 512">
+                                                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                                                </svg>
+                                            </i> <span class="d-none d-lg-inline">Youtube</span>
+                                        </a>
+                                        <a href="https://wa.me/message/D3GOAYGEMBDVJ1" target="_blank"
+                                           class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                            <i class="mr-3">
+                                                <svg aria-hidden="true" focusable="false" role="presentation"
+                                                     class="icon icon-social-behance" viewBox="0 0 576 512">
+                                                    <path d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z" />
+                                                </svg>
+                                            </i> <span class="d-none d-lg-inline">Whatsapp</span>
+                                        </a><a href="https://wa.me/message/D3GOAYGEMBDVJ1" target="_blank"
+                                               class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                            <i class="mr-3">
+                                                <svg aria-hidden="true" focusable="false" role="presentation"
+                                                     class="icon icon-social-skype" viewBox="0 0 448 512">
+                                                    <path d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z" />
+                                                </svg>
+                                            </i> <span class="d-none d-lg-inline">Skype</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__border border-top"></div>
+                <div class="footer__tape py-lg-15" style="position: fixed; left: 0; bottom: 0; background-color:whitesmoke; width: 100%; text-align: center;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 d-flex flex-column flex-lg-row align-items-lg-center py-40 py-lg-0">
+                                <div class="footer__logo w-100 m-auto ml-lg-0 mr-lg-15" style="max-width: 64px;">
+                                    <a href="#" class="d-block text-hide">
+                                        <svg version="1.0" style="padding:4;" xmlns="http://www.w3.org/2000/svg"
+                                             width="64.000000pt" height="27.000000pt" viewBox="0 0 64.000000 27.000000"
+                                             preserveAspectRatio="xMidYMid meet">
+
+                                            <g transform="translate(0.000000,27.000000) scale(0.008060,-0.011538)"
+                                               fill="#000000" stroke="none">
+                                                <path d="M1275 1988 c-28 -100 -37 -234 -44 -649 -9 -592 4 -944 37 -995 8
+									-13 284 -25 303 -13 10 6 8 36 -9 141 -35 215 -43 301 -50 520 -12 366 7 653
+									59 916 17 82 19 105 9 117 -10 12 -41 15 -151 15 l-138 0 -16 -52z" />
+                                                <path d="M6259 2024 c-51 -15 -127 -77 -158 -127 -11 -18 -29 -73 -41 -121
+									-11 -48 -27 -100 -35 -116 -15 -29 -59 -50 -105 -50 -15 0 -36 -10 -50 -25
+									-20 -21 -24 -38 -28 -111 -3 -52 -1 -89 6 -96 7 -7 24 -5 56 7 42 16 47 16 71
+									1 13 -9 27 -26 30 -39 2 -12 6 -229 8 -482 3 -369 6 -468 18 -499 l14 -39 148
+									0 c88 0 152 4 158 10 7 7 1 98 -20 284 -36 318 -51 560 -40 647 12 110 52 142
+									147 120 73 -16 82 -4 82 107 0 106 -9 115 -108 115 -62 0 -73 3 -82 21 -15 27
+									-5 65 26 107 24 30 29 32 77 30 l52 -3 18 55 c10 30 19 86 20 124 2 65 0 71
+									-23 83 -33 17 -182 16 -241 -3z" />
+                                                <path d="M707 1992 c-25 -5 -53 -66 -71 -152 -54 -263 -62 -1212 -12 -1425 22
+									-90 23 -91 224 -87 l172 3 0 25 c0 13 -11 80 -25 147 -72 356 -88 781 -41
+									1082 9 55 30 164 48 243 22 102 28 146 20 154 -10 10 -272 18 -315 10z" />
+                                                <path d="M6993 1890 c-73 -19 -118 -39 -164 -71 -22 -15 -29 -32 -39 -86 -6
+									-36 -18 -79 -26 -95 -14 -26 -18 -28 -78 -28 -46 0 -70 -5 -85 -17 -25 -21
+									-40 -76 -41 -149 0 -67 14 -80 67 -59 54 22 88 8 102 -40 6 -23 6 -106 -1
+									-243 -16 -308 10 -656 56 -766 16 -38 17 -38 59 -34 45 5 196 76 243 113 l28
+									22 -32 71 c-17 39 -41 117 -52 173 -25 124 -41 412 -30 543 13 152 45 188 147
+									165 47 -11 56 -10 71 4 22 23 29 151 10 187 -12 23 -21 25 -93 30 -79 5 -80 5
+									-83 33 -2 16 8 61 23 101 29 80 32 159 5 163 -8 1 -47 -6 -87 -17z" />
+                                                <path d="M2974 1629 c-56 -13 -141 -66 -177 -111 -32 -40 -45 -107 -33 -173
+									10 -51 73 -115 115 -115 28 0 34 5 55 53 26 59 46 80 99 102 72 30 158 12 219
+									-46 36 -34 45 -59 38 -109 -3 -30 -36 -48 -120 -69 -183 -45 -336 -155 -402
+									-289 -31 -64 -33 -72 -33 -182 0 -109 2 -118 29 -168 53 -95 136 -148 278
+									-178 89 -19 494 -16 542 4 28 12 28 13 23 75 -4 34 -11 211 -16 392 -12 410
+									-23 509 -60 591 -74 159 -210 235 -414 233 -56 -1 -120 -5 -143 -10z m315
+									-688 c39 -39 40 -278 2 -331 -51 -70 -197 -42 -258 49 -29 43 -31 117 -3 170
+									50 99 205 166 259 112z" />
+                                                <path d="M4077 1619 c-76 -26 -123 -56 -171 -109 -58 -65 -79 -120 -84 -225
+									-5 -120 19 -188 93 -260 50 -49 84 -68 296 -169 113 -53 149 -89 149 -146 0
+									-46 -37 -96 -87 -116 -41 -18 -146 -17 -196 0 -91 33 -172 123 -213 235 -10
+									28 -22 51 -27 51 -15 0 -46 -84 -59 -158 -33 -192 71 -346 271 -406 68 -20
+									226 -21 298 -2 125 33 224 109 275 210 28 53 32 74 36 158 9 207 -58 290 -359
+									444 -164 84 -219 130 -219 184 0 80 138 115 247 63 20 -9 54 -41 77 -70 51
+									-66 76 -69 128 -15 51 52 98 131 98 163 0 54 -123 143 -243 175 -79 21 -239
+									18 -310 -7z" />
+                                                <path d="M5122 1616 c-160 -60 -277 -220 -323 -442 -28 -131 -22 -349 11 -464
+									65 -226 227 -387 410 -408 254 -29 459 126 540 408 33 115 39 333 11 464 -46
+									226 -169 390 -333 445 -89 30 -230 29 -316 -3z m243 -235 c109 -50 165 -173
+									165 -361 0 -162 -47 -286 -129 -345 -38 -27 -51 -30 -116 -30 -65 0 -78 3
+									-116 30 -82 59 -129 183 -129 345 0 188 56 311 165 361 51 24 109 24 160 0z" />
+                                                <path d="M1820 1610 l-125 -5 -3 -109 c-7 -260 70 -453 263 -664 43 -48 75
+									-91 73 -100 -4 -21 -60 -59 -107 -72 -20 -6 -72 -14 -116 -17 -117 -8 -115 -6
+									-115 -185 0 -175 -3 -171 119 -156 388 47 759 516 800 1012 9 118 6 275 -6
+									286 -7 7 -181 15 -250 11 -29 -1 -35 -26 -23 -92 40 -207 -28 -539 -111 -539
+									-27 0 -112 101 -157 188 -61 116 -76 186 -67 302 7 100 8 131 3 135 -10 8 -68
+									10 -178 5z" />
+                                            </g>
+                                        </svg>
+
+                                        Ilyasoft-demo
+                                    </a>
+                                </div>
+                                <div class="footer__copyright pt-lg-0 mt-20 mt-lg-0">
+                                    <p class="mb-0">
+
+                                        &copy; 2019 Ilyasoft Store. All Rights Reserved. Ecommerce Software by
+                                        HTML. <br class="d-none d-lg-block"> HTML Theme by <a href="https://ilyasoft.net/"
+                                                                                              class="btn-link">Ilyasoft</a>.
+
+
+                                    </p>
+                                </div>
+                                <div class="d-lg-none mt-25">
+                                    <div class="footer__social-media-mobile">
+                                        <div class="social-media d-flex flex-wrap justify-content-center justify-content-lg-start">
+
+
+                                            <a href="https://www.facebook.com/" target="_blank"
+                                               class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                                <i>
+                                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                                         class="icon icon-social-facebook" viewBox="0 0 264 512">
+                                                        <path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" />
+                                                    </svg>
+                                                </i>
+                                            </a><a href="https://twitter.com/" target="_blank"
+                                                   class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                                <i>
+                                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                                         class="icon icon-social-twitter" viewBox="0 0 512 512">
+                                                        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                                    </svg>
+                                                </i>
+                                            </a><a href="https://plus.google.com/" target="_blank"
+                                                   class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                                <i>
+                                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                                         class="icon icon-social-google" viewBox="0 0 640 512">
+                                                        <path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z" />
+                                                    </svg>
+                                                </i>
+                                            </a><a href="https://www.instagram.com/" target="_blank"
+                                                   class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                                <i>
+                                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                                         class="icon icon-social-instagram" viewBox="0 0 448 512">
+                                                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                                    </svg>
+                                                </i>
+                                            </a><a href="https://www.youtube.com/" target="_blank"
+                                                   class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                                <i>
+                                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                                         class="icon icon-social-pinterest" viewBox="0 0 496 512">
+                                                        <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                                                    </svg>
+                                                </i>
+                                            </a><a href="https://www.instagram.com/" target="_blank"
+                                                   class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                                <i>
+                                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                                         class="icon icon-social-youtube" viewBox="0 0 576 512">
+                                                        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                                                    </svg>
+                                                </i>
+                                            </a><a href="https://www.behance.net/" target="_blank"
+                                                   class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                                <i>
+                                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                                         class="icon icon-social-behance" viewBox="0 0 576 512">
+                                                        <path d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z" />
+                                                    </svg>
+                                                </i>
+                                            </a><a href="https://www.skype.com/" target="_blank"
+                                                   class="d-flex align-items-center mb-6 mx-15 mx-lg-0 mr-lg-10">
+                                                <i>
+                                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                                         class="icon icon-social-skype" viewBox="0 0 448 512">
+                                                        <path d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z" />
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__border border-top w-100 d-lg-none"></div>
+                            <div class="col-lg-6 d-flex flex-column flex-lg-row align-items-lg-center pt-20 pb-15 py-lg-0">
+                                <div class="footer__payments d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center ml-lg-auto">
+
+                                    <a href="#" class="px-5"
+                                       data-js-tooltip
+                                       data-tippy-content="Stripe"
+                                       data-tippy-placement="top"
+                                       data-tippy-distance="6">
+                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                             class="icon icon--wide icon-payment-power-by-stripe" viewBox="0 0 200 100">
+                                            <path class="st0"
+                                                  d="M29 13.8L0 19v39.7C2.5 64 6.2 68.9 11.3 73.3c5 4.3 10.9 7.8 17.7 10.5 6.7-2.7 12.7-6.2 17.7-10.5s8.8-9.2 11.3-14.6V19l-29-5.2z" />
+                                            <path class="st1"
+                                                  d="M24.3 60.2l-12.8-14 4.6-3.5 8.1 5.8 17.5-15.1 4.6 2.3-22 24.5zM78.4 57.5c0-1.4 1.2-1.9 3.1-1.9 2.8 0 6.2.8 9 2.3v-8.6c-3-1.2-6-1.7-9-1.7-7.4 0-12.3 3.8-12.3 10.3 0 10 13.8 8.4 13.8 12.7 0 1.7-1.5 2.2-3.5 2.2-3 0-6.9-1.2-9.9-2.9v8.7c3.4 1.5 6.8 2.1 9.9 2.1 7.5 0 12.7-3.7 12.7-10.2 0-10.8-13.8-8.9-13.8-13zm24.5-17.1l-8.8 1.9v29.1c0 5.4 4 9.3 9.4 9.3 3 0 5.2-.6 6.3-1.2v-7.4c-1.2.5-6.9 2.1-6.9-3.2V56h6.9v-7.7h-6.9v-7.9zM121.1 51l-.6-2.7h-7.8v31.8h9.1V58.5c2.1-2.8 5.8-2.3 6.9-1.9v-8.4c-1.2-.3-5.4-1.1-7.6 2.8zm9.8-2.7h9.1v31.8h-9.1V48.3zm0-2.8l9.1-1.9v-7.4l-9.1 1.9v7.4zm28.1 2.2c-3.6 0-5.8 1.7-7.1 2.8l-.5-2.3h-8v42.4l9.1-1.9V78.4c1.3 1 3.2 2.3 6.4 2.3 6.5 0 12.4-5.2 12.4-16.7 0-10.6-5.9-16.3-12.3-16.3zm-2.2 25c-2.1 0-3.4-.8-4.3-1.7V57.5c1-1.1 2.3-1.8 4.3-1.8 3.3 0 5.6 3.7 5.6 8.5 0 4.9-2.2 8.5-5.6 8.5zm43.2-8.4c0-9.3-4.5-16.6-13.1-16.6-8.7 0-13.9 7.3-13.9 16.6 0 11 6.2 16.5 15 16.5 4.3 0 7.6-1 10.1-2.4v-7.3c-2.5 1.2-5.3 2-8.9 2-3.5 0-6.7-1.2-7.1-5.5h17.8c0-.5.1-2.4.1-3.3zm-17.9-3.4c0-4.1 2.5-5.8 4.8-5.8 2.2 0 4.6 1.7 4.6 5.8h-9.4zM70.7 18.7c.8-.2 1.9-.3 3.4-.3 1.7 0 3 .4 3.8 1.1.8.6 1.2 1.6 1.2 2.9 0 1.2-.4 2.2-1 2.9-.9 1-2.4 1.5-4.2 1.5-.5 0-1 0-1.4-.1v5.4h-1.7V18.7zm1.8 6.5c.4.1.9.2 1.5.2 2.1 0 3.4-1 3.4-2.9 0-1.8-1.3-2.7-3.2-2.7-.8 0-1.3.1-1.7.2v5.2zM89.7 27.1c0 3.6-2.5 5.2-4.8 5.2-2.7 0-4.7-1.9-4.7-5 0-3.3 2.1-5.2 4.8-5.2 2.8 0 4.7 2 4.7 5zm-7.7.1c0 2.1 1.2 3.8 3 3.8 1.7 0 3-1.6 3-3.8 0-1.7-.8-3.8-2.9-3.8-2.2 0-3.1 2-3.1 3.8zM92.5 22.3l1.3 5c.3 1.1.6 2.1.7 3.1h.1c.2-1 .6-2 .9-3.1l1.6-5h1.5l1.5 4.9c.4 1.2.6 2.2.9 3.2h.1c.2-1 .4-2 .8-3.2l1.4-4.9h1.7l-3.1 9.8h-1.6l-1.5-4.6c-.4-1.1-.6-2.1-.9-3.2-.2 1.2-.6 2.2-.9 3.2L95.3 32h-1.7l-2.9-9.8 1.8.1zM107.5 27.6c0 2.4 1.6 3.4 3.3 3.4 1.3 0 2-.2 2.7-.5l.3 1.3c-.6.3-1.7.6-3.3.6-3 0-4.8-2-4.8-4.9s1.7-5.3 4.6-5.3c3.2 0 4 2.8 4 4.6 0 .4 0 .6-.1.8h-6.7zm5.2-1.3c0-1.1-.5-2.9-2.5-2.9-1.8 0-2.6 1.7-2.7 2.9h5.2zM116.5 25.4c0-1.2 0-2.1-.1-3.1h1.5l.1 1.9h.1c.4-1.3 1.5-2.1 2.7-2.1.2 0 .4 0 .5.1v1.7c-.2 0-.4-.1-.6-.1-1.3 0-2.1 1-2.4 2.3 0 .2-.1.5-.1.8V32h-1.7v-6.6zM123.9 27.6c0 2.4 1.6 3.4 3.3 3.4 1.3 0 2-.2 2.7-.5l.3 1.3c-.6.3-1.7.6-3.3.6-3 0-4.8-2-4.8-4.9s1.7-5.3 4.6-5.3c3.2 0 4 2.8 4 4.6 0 .4 0 .6-.1.8h-6.7zm5.2-1.3c0-1.1-.5-2.9-2.5-2.9-1.8 0-2.6 1.7-2.7 2.9h5.2zM141.5 17.8v11.8c0 .9 0 1.9.1 2.5H140l-.1-1.7c-.6 1.1-1.7 1.9-3.3 1.9-2.3 0-4.2-2-4.2-5 0-3.3 2-5.2 4.4-5.2 1.5 0 2.5.7 2.9 1.5v-5.8h1.8zm-1.8 8.5c0-.2 0-.5-.1-.8-.3-1.1-1.2-2.1-2.6-2.1-1.8 0-2.9 1.6-2.9 3.8 0 2 1 3.6 2.9 3.6 1.2 0 2.3-.8 2.6-2.1.1-.2.1-.5.1-.8v-1.6zM148.6 32.1c0-.7.1-1.7.1-2.5V17.8h1.7v6.1c.6-1.1 1.7-1.8 3.3-1.8 2.4 0 4.1 2 4.1 5 0 3.5-2.2 5.2-4.4 5.2-1.4 0-2.5-.6-3.3-1.8h-.1l-.1 1.6h-1.3zm1.9-3.9c0 .2 0 .4.1.6.4 1.2 1.4 2.1 2.7 2.1 1.9 0 3-1.5 3-3.8 0-1.9-1-3.6-2.9-3.6-1.2 0-2.3.8-2.7 2.2 0 .2-.1.4-.1.7l-.1 1.8zM160.7 22.3l2.1 5.8c.2.6.5 1.4.6 2 .2-.6.4-1.3.6-2l1.9-5.7h1.9l-2.7 6.9c-1.3 3.3-2.1 5.1-3.3 6.1-.9.8-1.7 1.1-2.2 1.2l-.4-1.5c.4-.2 1-.4 1.5-.9.5-.4 1.1-1.1 1.5-2 .1-.2.2-.3.2-.4 0-.1 0-.2-.1-.5l-3.6-9h2z" />
+                                        </svg>
+                                        <span class="d-none">Power by stripe</span>
+                                    </a>
+
+                                    <a href="#" class="px-5"
+                                       data-js-tooltip
+                                       data-tippy-content="Secure"
+                                       data-tippy-placement="top"
+                                       data-tippy-distance="6">
+                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                             class="icon icon--wide icon-payment-shopify-secure" viewBox="0 0 200 100">
+                                            <path class="st1"
+                                                  d="M65.5 42.5c1.1.7 3.3 1.5 5.3 1.3 1.7 0 2.9-.9 2.9-2.2 0-1.1-.7-2-2.6-3.1-2.4-1.3-4.2-3.3-4.2-5.9 0-4.6 4-7.7 9.4-7.7 2.4 0 4.4.5 5.5 1.1l-1.5 4.6c-.9-.5-2.4-.9-4-.9-1.7 0-3.1.9-3.1 2.2 0 1.1.9 1.7 2.4 2.6 2.4 1.5 4.6 3.5 4.6 6.2 0 5-4.2 8.1-9.9 7.9-2.6 0-5-.7-6.4-1.5l1.6-4.6zM81.6 47.8L88 14.9h6.4L92 28.1v.2c1.7-2 4-3.3 6.8-3.3 3.3 0 5.3 2.2 5.3 5.9 0 1.1-.2 2.6-.5 4l-2.4 12.9h-6.4l2.4-12.7c.2-.9.2-1.7.2-2.6 0-1.3-.7-2.4-2-2.4-2 0-4.2 2.4-5 6.6l-2.2 11h-6.6v.1zM127.4 34c0 7.9-5 14.7-12.7 14.7-5.7 0-8.8-4-8.8-9 0-7.9 5-14.7 12.9-14.7 5.8 0 8.6 4.4 8.6 9zm-15.1 5.7c0 2.4.9 4.2 3.1 4.2 3.5 0 5.3-6.2 5.3-10.1 0-2-.7-4-3.1-4-3.4.2-5.3 6.2-5.3 9.9zM125.7 56.6l4.4-22.8c.5-2.6 1.1-5.7 1.3-7.9h5.7l-.5 2.2c1.7-2.2 4.2-3.5 6.8-3.5 4.6 0 6.6 4.2 6.6 8.4 0 7.9-5 15.6-12.5 15.6-1.1.2-2.6-.7-3.3-.7h-.2l-1.7 8.8-6.6-.1zm9.2-13.6c.7.7 1.5.9 2.6.9 3.5 0 6.2-5.9 6.2-10.1 0-1.7-.7-3.5-2.6-3.5-2.2 0-4.4 2.6-5 6.6l-1.2 6.1zM150.7 47.8l4.4-22h6.6l-4.4 22h-6.6zm8.3-24.2c-1.7 0-3.1-1.7-3.1-3.7 0-2.2 1.5-4 3.7-4 2 0 3.3 1.7 3.3 3.5-.2 2.5-1.9 4.2-3.9 4.2zM162.7 47.8l3.5-17.6h-3.1l.9-4.4h3.1l.2-1.3c.5-2.6 1.5-5.5 3.7-7.4 1.7-1.5 4-2.2 6.4-2.2 1.5 0 2.9.2 3.5.5l-1.3 5c-.7-.2-1.3-.5-2-.5-2.2 0-3.5 2.2-3.7 4.4l-.7 1.5h4.4l-.9 4.4h-4.4l-3.5 17.6h-6.1zM185.8 25.9l1.1 10.1c.2 2.2.5 3.1.7 5.3.5-2.2.9-2.9 2-5.3l4-10.1h6.6l-7.9 16.7c-2.9 5.7-5.5 9.9-8.6 12.7-2.2 2.2-5 3.1-6.4 3.5l-1.7-5.5c1.1-.5 2.4-.9 3.7-1.7 1.5-1.1 2.9-2.4 3.5-4 .2-.2.2-.5.2-.9l-4-20.8h6.8z" />
+                                            <g>
+                                                <path class="st2"
+                                                      d="M72.7 74.5l2.1-.2c.1.9.3 1.5.7 2.1.4.5 1 1 1.7 1.3.8.3 1.7.5 2.6.5.9 0 1.6-.1 2.3-.4s1.2-.6 1.5-1c.3-.5.5-.9.5-1.5 0-.5-.2-1-.5-1.4s-.8-.7-1.5-1c-.5-.2-1.5-.5-3-.8-1.6-.4-2.7-.7-3.3-1.1-.8-.4-1.4-1-1.8-1.6-.4-.6-.6-1.3-.6-2.1 0-.9.2-1.7.7-2.4.5-.7 1.2-1.3 2.2-1.7 1-.4 2-.6 3.1-.6 1.2 0 2.4.2 3.4.6 1 .4 1.7 1 2.2 1.8s.8 1.7.8 2.7l-2.2.2c-.1-1.1-.5-1.9-1.2-2.5-.7-.5-1.7-.8-3-.8-1.4 0-2.4.2-3 .7-.6.5-1 1.1-1 1.8 0 .6.2 1.1.7 1.5.4.4 1.6.8 3.4 1.2 1.8.4 3.1.8 3.8 1.1 1 .5 1.7 1 2.2 1.7.5.7.7 1.5.7 2.4 0 .9-.2 1.7-.8 2.6-.5.8-1.3 1.4-2.2 1.9-1 .5-2.1.7-3.3.7-1.5 0-2.8-.2-3.9-.7-1-.5-1.9-1.1-2.5-2-.5-.9-.8-1.9-.8-3zM93.2 80V62.9h12.4v2H95.4v5.2h9.4v2h-9.4V78h10.5v2H93.2zM125.1 74l2.2.6c-.5 1.9-1.3 3.3-2.6 4.2-1.2 1-2.7 1.5-4.5 1.5-1.8 0-3.3-.4-4.5-1.1-1.2-.7-2-1.8-2.6-3.2-.6-1.4-.9-3-.9-4.6 0-1.8.3-3.3 1-4.7.7-1.3 1.7-2.3 2.9-3 1.2-.7 2.6-1 4.2-1 1.7 0 3.2.4 4.3 1.3 1.2.9 2 2.1 2.5 3.7l-2.2.5c-.4-1.2-1-2.2-1.7-2.7-.7-.6-1.7-.8-2.8-.8-1.3 0-2.4.3-3.3 1-.9.6-1.5 1.5-1.9 2.5-.4 1.1-.5 2.2-.5 3.3 0 1.5.2 2.7.6 3.8.4 1.1 1.1 1.9 2 2.4.9.5 1.9.8 2.9.8 1.2 0 2.3-.4 3.2-1.1.8-.9 1.4-2 1.7-3.4zM145.2 62.9h2.2v9.9c0 1.7-.2 3.1-.6 4.1-.4 1-1.1 1.8-2.1 2.5-1 .6-2.3 1-4 1-1.6 0-2.9-.3-3.9-.8s-1.7-1.3-2.2-2.4c-.4-1-.7-2.5-.7-4.3V63h2.2v9.9c0 1.5.1 2.6.4 3.3.3.7.7 1.2 1.4 1.6s1.5.6 2.5.6c1.7 0 2.9-.4 3.6-1.1.7-.7 1.1-2.2 1.1-4.4v-10h.1zM155.1 80V62.9h7.6c1.5 0 2.7.2 3.5.5.8.3 1.4.8 1.9 1.6s.7 1.6.7 2.6c0 1.2-.4 2.2-1.2 3.1-.8.8-2 1.4-3.6 1.6.6.3 1 .6 1.4.8.7.6 1.3 1.4 1.9 2.3l3 4.7h-2.8l-2.2-3.6c-.7-1-1.2-1.8-1.6-2.4-.4-.5-.8-.9-1.2-1.1-.3-.2-.7-.4-1-.5-.2 0-.7-.1-1.2-.1h-2.6V80h-2.6zm2.2-9.6h4.9c1 0 1.8-.1 2.4-.3.6-.2 1-.5 1.3-1 .3-.5.5-1 .5-1.5 0-.8-.3-1.5-.9-2s-1.5-.8-2.8-.8h-5.4v5.6zM176.2 80V62.9h12.4v2h-10.1v5.2h9.4v2h-9.4V78H189v2h-12.8z" />
+                                            </g>
+                                            <path class="st0"
+                                                  d="M50.9 29.9v-2.5h-.1c-2.7.7-5.5 1.4-8.4 1.9v-.2c0-8.9-6.6-14.8-15-15.3-8.4.5-15 6.4-15 15.3v.2c-2.9-.5-5.7-1.1-8.4-1.9v2.5c0 17.2-1.4 34-4 50.2h54.8c-2.5-16.2-3.9-33-3.9-50.2zM34.4 69.3H20.5l4.4-12.8a7.6 7.6 0 0 1-4.9-7.1c0-4.2 3.4-7.5 7.5-7.5s7.5 3.4 7.5 7.5c0 3.2-2 6-4.9 7.1l4.3 12.8zm6.2-39.7c-4.2.6-8.7 1-13.2 1.1-4.5-.1-8.9-.5-13.2-1.1v-.5c0-7.9 5.8-13 13.2-13.5 7.4.4 13.2 5.5 13.2 13.4v.6z" />
+                                        </svg>
+                                        <span class="d-none">Secure</span>
+                                    </a>
+
+                                    <a href="#" class="px-5"
+                                       data-js-tooltip
+                                       data-tippy-content="AES 256bit"
+                                       data-tippy-placement="top"
+                                       data-tippy-distance="6">
+                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                             class="icon icon-payment-aes-256bit" viewBox="0 0 122.5 100">
+                                            <path class="st0"
+                                                  d="M27 18.7l23 4.1v32.6c-2 4.2-5.1 8-9.1 11.5-3.9 3.4-8.6 6.3-13.9 8.5-5.3-2.2-10-5.1-13.9-8.5C9 63.4 6 59.6 3.9 55.4V22.9L27 18.7m0-3.3L.7 20.1v36c2.2 4.8 5.7 9.3 10.2 13.2 4.5 3.9 9.9 7.1 16 9.5 6.1-2.4 11.5-5.6 16-9.5 4.5-3.9 8-8.4 10.2-13.2v-36L27 15.4z" />
+                                            <path class="st1"
+                                                  d="M70.6 21.4h6.7l6.8 31h-5.8L77 45.3h-6l-1.4 7.2h-5.9l6.9-31.1zm5.7 20.3l-2.3-13-2.3 13h4.6zM85.5 21.4h14.3v4h-8.1v8.9h6.4v3.9h-6.4v10.3h8.2v3.9H85.5v-31zM105.2 50.4c-1.5-1.6-2.4-3.9-2.5-7.1l5.4-.9c.1 2 .4 3.5 1 4.5s1.6 1.6 2.8 1.6c.9 0 1.7-.3 2.1-.8.5-.5.7-1.2.7-2.1 0-1.2-.3-2.3-.9-3.1-.6-.9-1.6-1.8-2.8-2.8l-4.3-3.4c-1.3-1-2.3-2.1-3-3.3-.7-1.2-1-2.6-1-4.2 0-2.4.8-4.3 2.3-5.6 1.6-1.3 3.7-2 6.5-2 2.9 0 5.1.8 6.4 2.3 1.3 1.5 2 3.6 2.2 6.1l-5.4.9c-.1-1.7-.3-2.9-.8-3.8-.4-.9-1.3-1.3-2.6-1.3-.9 0-1.6.3-2.1.8-.5.6-.8 1.2-.8 2.1 0 1 .2 1.8.7 2.5.4.7 1.1 1.4 2.1 2.2l4.3 3.4c1.6 1.2 2.8 2.6 3.7 4 .9 1.4 1.3 3.1 1.3 5 0 1.5-.4 2.8-1.1 3.9-.7 1.1-1.7 2-3 2.7s-2.8 1-4.5 1c-2.9-.2-5.2-1-6.7-2.6zM61.7 73.1l4.5-6.4c.1-.1.1-.2.2-.3 0-.1.1-.1.2-.2.5-.8.9-1.4 1.2-1.9.3-.5.4-1.1.4-1.7 0-1.3-.5-1.9-1.5-1.9-.7 0-1.2.2-1.4.7-.3.5-.4 1.1-.4 1.9v.7h-3v-.7c0-1.6.4-2.8 1.2-3.7.8-.9 2-1.3 3.7-1.3 1.5 0 2.7.4 3.5 1.1.8.8 1.2 1.8 1.2 3.2 0 .9-.2 1.6-.5 2.3-.3.7-.8 1.5-1.5 2.4l-.3.4-3.8 5.2H71v2.3h-9.1l-.2-2.1zM74.1 74.1c-.7-.9-1-2.1-1-3.7h3.1c0 .9.1 1.7.3 2.1.2.5.7.7 1.3.7.5 0 .9-.1 1.1-.4.2-.3.4-.7.5-1.2.1-.5.1-1.2.1-2.1 0-1.1-.1-1.9-.3-2.4-.2-.5-.7-.8-1.4-.8-.4 0-.8.1-1.1.4-.3.3-.5.6-.7 1.1h-2.7l.2-9.3h8.2V61h-5.6l-.1 4c.3-.3.6-.5 1.1-.6.5-.1 1-.2 1.6-.2 1.3 0 2.3.4 2.9 1.3s.9 2.2.9 3.8c0 1.3-.1 2.4-.4 3.2-.3.9-.8 1.6-1.4 2.1-.7.5-1.7.8-2.9.8-1.8 0-3-.4-3.7-1.3zM85.7 73.9c-.8-1-1.2-2.3-1.2-4V64c0-1.8.4-3.2 1.1-4.2.7-1 1.9-1.5 3.7-1.5 1.6 0 2.7.3 3.5 1 .7.7 1.1 1.8 1.1 3.1v.3h-3c0-.8-.1-1.4-.3-1.7-.2-.3-.6-.5-1.2-.5s-1 .3-1.3.8c-.2.5-.4 1.4-.4 2.7v2c.2-.3.6-.6 1-.8.4-.2 1-.3 1.6-.3 2.6 0 3.9 1.6 3.9 4.8 0 3.8-1.6 5.7-4.8 5.7-1.7 0-2.9-.5-3.7-1.5zm4.9-1.5c.2-.5.3-1.2.3-2.2 0-.8 0-1.3-.1-1.8 0-.4-.2-.8-.4-1-.2-.3-.6-.4-1.1-.4-.4 0-.7.1-1 .3-.3.2-.5.4-.7.6v2.6c0 .8.1 1.4.4 1.9s.7.7 1.3.7c.6.1 1.1-.2 1.3-.7zM96.4 58.5h4.5c1.7 0 3.1.3 4 1 .9.7 1.4 1.8 1.4 3.3 0 1-.2 1.8-.7 2.4-.5.6-1.1.9-2 1 2.1.4 3.2 1.8 3.2 4.1 0 1.6-.4 2.8-1.3 3.6-.9.8-2.1 1.2-3.8 1.2h-5.3V58.5zm4.5 6.8c1 0 1.6-.2 2-.6.4-.4.5-1 .5-1.9 0-.9-.2-1.4-.7-1.7-.5-.3-1.2-.5-2.3-.5h-.7v4.7h1.2zm.2 7.7c1 0 1.7-.2 2-.6.4-.4.6-1.1.6-2.1s-.2-1.7-.6-2.2c-.4-.5-1.1-.7-2.1-.7h-1.2V73h1.3zM109 59h3.1v2.3H109V59zm0 4.2h3.1v11.9H109V63.2zM115.8 74.5c-.5-.5-.7-1.3-.7-2.3v-7.1h-1.3v-1.8h1.3v-3.6h3.1v3.6h2v1.8h-2V72c0 .4.1.7.3.9.2.2.5.3.9.3s.7 0 .9-.1v2.2c-.6.1-1.3.1-2 .1-1.2-.1-2.1-.4-2.5-.9zM22.7 57.8L11.1 45.2l4.2-3.2 7.4 5.3 15.8-13.7 4.2 2.1-20 22.1z" />
+                                        </svg>
+                                        <span class="d-none">Aes 256bit</span>
+                                    </a>
+
+                                    <a href="#" class="px-5"
+                                       data-js-tooltip
+                                       data-tippy-content="PayPal"
+                                       data-tippy-placement="top"
+                                       data-tippy-distance="6">
+                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                             class="icon icon--wide icon-payment-paypal" viewBox="0 0 200 100">
+                                            <path class="st3"
+                                                  d="M135.1 28h-15.4c-.9 0-1.8.9-2.3 1.8l-6.3 39.9c0 .9.5 1.4 1.4 1.4h8.2c.9 0 1.4-.5 1.4-1.4l1.8-11.3c0-.9.9-1.8 2.3-1.8h5c10.4 0 16.3-5 17.7-15 .9-4.1 0-7.7-1.8-10-2.9-2.2-7-3.6-12-3.6m1.9 15c-.9 5.4-5 5.4-9.1 5.4h-2.7L127 38c0-.5.5-.9 1.4-.9h.9c2.7 0 5.4 0 6.8 1.8.9.5.9 1.8.9 4.1" />
+                                            <path class="st1"
+                                                  d="M24 28H8.6c-.9 0-1.8.9-2.3 1.8L0 69.7c0 .9.5 1.4 1.4 1.4h7.3c.9 0 1.8-.9 2.3-1.8l1.8-10.9c0-.9.9-1.8 2.3-1.8h5c10.4 0 16.3-5 17.7-15 .9-4.1 0-7.7-1.8-10-2.9-2.2-6.5-3.6-12-3.6m1.9 15c-.9 5.4-5 5.4-9.1 5.4h-2.3L16.3 38c0-.5.5-.9 1.4-.9h.9c2.7 0 5.4 0 6.8 1.8.5.5.9 1.8.5 4.1M70.7 42.5h-7.3c-.5 0-1.4.5-1.4.9l-.5 2.3-.5-.9c-1.8-2.3-5-3.2-8.6-3.2-8.2 0-15.4 6.3-16.8 15-.9 4.5.5 8.6 2.7 11.3 2.3 2.7 5.4 3.6 9.5 3.6 6.8 0 10.4-4.1 10.4-4.1l-.2 2.3c0 .9.5 1.4 1.4 1.4h6.8c.9 0 1.8-.9 2.3-1.8l4.1-25.4c-.5-.5-1.4-1.4-1.9-1.4M60.3 57c-.9 4.1-4.1 7.3-8.6 7.3-2.3 0-4.1-.9-5-1.8-.9-1.4-1.4-3.2-1.4-5.4.5-4.1 4.1-7.3 8.2-7.3 2.3 0 3.6.9 5 1.8 1.4 1.4 1.8 3.6 1.8 5.4" />
+                                            <path class="st3"
+                                                  d="M181.4 42.5h-7.3c-.5 0-1.4.5-1.4.9l-.5 2.3-.5-.9c-1.8-2.3-5-3.2-8.6-3.2-8.2 0-15.4 6.3-16.8 15-.9 4.5.5 8.6 2.7 11.3 2.3 2.7 5.4 3.6 9.5 3.6 6.8 0 10.4-4.1 10.4-4.1l-.5 2.3c0 .9.5 1.4 1.4 1.4h6.8c.9 0 1.8-.9 2.3-1.8l4.1-25.4c-.2-.5-.7-1.4-1.6-1.4M171 57c-.9 4.1-4.1 7.3-8.6 7.3-2.3 0-4.1-.9-5-1.8-.9-1.4-1.4-3.2-1.4-5.4.5-4.1 4.1-7.3 8.2-7.3 2.3 0 3.6.9 5 1.8 1.8 1.4 2.2 3.6 1.8 5.4" />
+                                            <path class="st1"
+                                                  d="M110.2 42.5h-7.7c-.9 0-1.4.5-1.8.9l-10 15.4-4.5-14.5c-.5-.9-.9-1.4-2.3-1.4h-7.3c-.9 0-1.4.9-1.4 1.8l8.2 24-7.7 10.9c-.5.9 0 2.3.9 2.3h7.3c.9 0 1.4-.5 1.8-.9l24.9-35.8c1.4-1.3.5-2.7-.4-2.7" />
+                                            <path class="st3"
+                                                  d="M190 29.4l-6.3 40.8c0 .9.5 1.4 1.4 1.4h6.3c.9 0 1.8-.9 2.3-1.8l6.3-39.9c0-.9-.5-1.4-1.4-1.4h-7.3c-.4-.5-.8 0-1.3.9" />
+                                        </svg>
+                                        <span class="d-none">Paypal</span>
+                                    </a>
+
+                                    <a href="#" class="px-5"
+                                       data-js-tooltip
+                                       data-tippy-content="Visa"
+                                       data-tippy-placement="top"
+                                       data-tippy-distance="6">
+                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                             class="icon icon-payment-visa" viewBox="0 0 141.7 100">
+                                            <path class="st1"
+                                                  d="M52 71.1l7-39.7h11.1l-6.9 39.7zM103.2 31.8c-2.2-.9-5.7-1.8-10.1-1.8-11 0-19 5.5-19 13.5 0 6 5.5 9 9.9 11s5.7 3.3 5.7 5.1c0 2.6-3.5 4-6.6 4-4.4 0-6.8-.7-10.6-2.2l-1.5-.7-1.5 9C72 70.9 76.9 72 82 72c11.7 0 19.4-5.5 19.4-13.9 0-4.6-2.9-8.2-9.5-11-4-2-6.4-3.1-6.4-5.1 0-1.8 2-3.5 6.4-3.5 3.8 0 6.4.7 8.4 1.5l1.1.4 1.8-8.6zM122.1 31.4c-2.6 0-4.6.2-5.7 2.9L99.8 71.1h11.9l2.2-6.6H128l1.3 6.6H140l-9.3-39.7h-8.6zm-5 26.5c.7-2 4.4-11.7 4.4-11.7l1.5-4 .7 3.8s2.2 9.9 2.6 12.1H117v-.2zM31.7 59.2l-1.1-5.7c-2-6.6-8.4-13.9-15.4-17.4L25 71.3h12l17.9-39.7h-12L31.7 59.2z" />
+                                            <path class="st3"
+                                                  d="M30.5 49.3c0 .1.1.2.1.2l-.4-1.7L26.6 31c-.7-2.6-2.6-3.3-5.1-3.3H1l7 2.2c8.7 3.3 15.9 8.7 20 14.9 1 1.6 1.8 3.3 2.5 5v-.5z" />
+                                        </svg>
+                                        <span class="d-none">Visa</span>
+                                    </a>
+
+                                    <a href="#" class="px-5"
+                                       data-js-tooltip
+                                       data-tippy-content="MasterCard"
+                                       data-tippy-placement="top"
+                                       data-tippy-distance="6">
+                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                             class="icon icon-payment-mastercard" viewBox="0 0 115.7 100">
+                                            <path class="st1"
+                                                  d="M68 51.2C68 69.8 53 85 34.2 85 15.6 85 .4 69.8.4 51.2c0-18.6 15-33.8 33.6-33.8 19 0 34 15.2 34 33.8z" />
+                                            <path class="st3"
+                                                  d="M113.6 51c0 18.7-15.1 34-34 34-18.7 0-34-15.3-34-34s15.1-34 33.8-34c19.1 0 34.2 15.3 34.2 34z" />
+                                            <path class="st1"
+                                                  d="M68.1 51.2c0-2.5-.4-4.9-.7-7.2H46.5c.2-1.3.5-2.3.9-3.6h18.7c-.4-1.3-.9-2.5-1.4-3.6H48.9c.5-1.3 1.3-2.3 2-3.6H63c-.7-1.3-1.6-2.5-2.7-3.6h-6.7c1.1-1.3 2.2-2.3 3.4-3.4-5.8-5.4-13.6-8.6-22.1-8.8V85c8.6-.1 16.3-3.5 22.3-8.8 1.3-1.1 2.3-2.3 3.4-3.6h-7c-.9-1.1-1.8-2.3-2.5-3.4h12.1c.7-1.1 1.4-2.3 2-3.6H49c-.5-1.1-1.1-2.3-1.4-3.6h18.7c1.1-3.4 1.8-7 1.8-10.8z" />
+                                            <path class="st4"
+                                                  d="M46.3 59.6l.5-3.1c-.2 0-.5.2-.9.2-1.3 0-1.4-.7-1.3-1.1l1.1-6.3h2l.5-3.4h-1.8l.4-2.2h-3.6S41 55.6 41 57c0 2.2 1.3 3.1 2.9 3.1 1.2.1 2.1-.3 2.4-.5zM47.6 53.9c0 5 3.4 6.3 6.3 6.3 2.7 0 3.8-.5 3.8-.5l.7-3.4s-2 .9-3.8.9c-4 0-3.2-2.9-3.2-2.9h7.4s.5-2.3.5-3.2c0-2.3-1.3-5.2-5.2-5.2-3.8-.5-6.5 3.5-6.5 8zm6.3-5.2c2 0 1.6 2.3 1.6 2.5h-4c.1-.2.4-2.5 2.4-2.5zM76.7 59.6l.7-4s-1.8.9-3.1.9c-2.5 0-3.6-2-3.6-4.1 0-4.3 2.2-6.7 4.7-6.7 1.8 0 3.2 1.1 3.2 1.1l.5-3.8s-2.2-.9-4.1-.9c-4.1 0-8.3 3.6-8.3 10.4 0 4.5 2.2 7.6 6.5 7.6 1.6.1 3.5-.5 3.5-.5zM26.6 45.4c-2.5 0-4.3.7-4.3.7l-.5 3.1s1.6-.7 4-.7c1.3 0 2.3.2 2.3 1.3 0 .7-.2.9-.2.9h-1.6c-3.1 0-6.5 1.3-6.5 5.4 0 3.2 2.2 4 3.4 4 2.5 0 3.6-1.6 3.8-1.6l-.2 1.4H30l1.4-9.9c0-4.4-3.6-4.6-4.8-4.6zm.7 8.1c0 .5-.4 3.4-2.5 3.4-1.1 0-1.4-.9-1.4-1.4 0-.9.5-2.2 3.2-2.2.5.2.7.2.7.2zM34.8 60c.9 0 5.4.2 5.4-4.7 0-4.5-4.3-3.6-4.3-5.4 0-.9.7-1.3 2-1.3.5 0 2.5.2 2.5.2l.5-3.2s-1.3-.4-3.4-.4c-2.7 0-5.4 1.1-5.4 4.7 0 4.1 4.5 3.8 4.5 5.4 0 1.1-1.3 1.3-2.2 1.3-1.6 0-3.2-.5-3.2-.5l-.5 3.2c.2.3 1.1.7 4.1.7zM106.6 42.5l-.7 4.9s-1.4-1.8-3.4-1.8c-3.2 0-6.1 4-6.1 8.6 0 2.9 1.4 5.9 4.5 5.9 2.2 0 3.4-1.4 3.4-1.4l-.2 1.3h3.6l2.7-17.3-3.8-.2zm-1.6 9.6c0 2-.9 4.5-2.9 4.5-1.3 0-2-1.1-2-2.9 0-2.9 1.3-4.7 2.9-4.7 1.3 0 2 .9 2 3.1zM6.9 59.8l2.2-13 .4 13H12l4.7-13-2 13h3.8l2.9-17.3h-5.9l-3.6 10.6-.2-10.6H6.4L3.5 59.8h3.4z" />
+                                            <path class="st4"
+                                                  d="M62.7 59.8c1.1-5.9 1.3-10.8 3.8-9.9.4-2.3.9-3.2 1.3-4.1h-.7c-1.6 0-2.9 2.2-2.9 2.2l.4-2h-3.4l-2.3 14h4v-.2zM85 45.4c-2.5 0-4.3.7-4.3.7l-.5 3.1s1.6-.7 4-.7c1.3 0 2.3.2 2.3 1.3 0 .7-.2.9-.2.9h-1.6c-3.1 0-6.5 1.3-6.5 5.4 0 3.2 2.2 4 3.4 4 2.5 0 3.6-1.6 3.8-1.6l-.2 1.4h3.2l1.4-9.9c.3-4.4-3.5-4.6-4.8-4.6zm.9 8.1c0 .5-.4 3.4-2.5 3.4-1.1 0-1.4-.9-1.4-1.4 0-.9.5-2.2 3.2-2.2.5.2.5.2.7.2zM92.9 59.8c1.1-5.9 1.3-10.8 3.8-9.9.4-2.3.9-3.2 1.3-4.1h-.7c-1.6 0-2.9 2.2-2.9 2.2l.4-2h-3.4L89 60h4v-.2z" />
+                                        </svg>
+                                        <span class="d-none">Mastercard</span>
+                                    </a>
+
+                                    <a href="#" class="px-5"
+                                       data-js-tooltip
+                                       data-tippy-content="Discover Network"
+                                       data-tippy-placement="top"
+                                       data-tippy-distance="6">
+                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                             class="icon icon--wide icon-payment-discover-network" viewBox="0 0 200 100">
+                                            <circle class="st0" cx="106.1" cy="36.3" r="16.8" />
+                                            <path class="st1"
+                                                  d="M9 20.5H0v31.6h9c4.8 0 8.4-1.3 11.3-3.5 3.5-2.9 5.8-7.4 5.8-12.3 0-9.3-6.7-15.8-17.1-15.8zm7.5 23.9c-2 1.6-4.6 2.6-8.4 2.6h-2V26h1.6c3.9 0 6.5.6 8.4 2.6 2.3 1.9 3.5 4.8 3.5 7.7.4 2.9-.9 6.2-3.1 8.1z" />
+                                            <path class="st1" d="M29 20.5h6.1v31.6H29z" />
+                                            <path class="st1"
+                                                  d="M50.6 32.8c-3.9-1.3-4.8-2.3-4.8-3.9 0-1.9 1.9-3.5 4.5-3.5 1.9 0 3.5.6 5.2 2.6l3.2-4.2c-2.6-2.3-5.8-3.5-9.4-3.5-5.5 0-10 3.9-10 9 0 4.5 1.9 6.5 7.7 8.7 2.6 1 3.5 1.3 4.2 1.9 1.3.6 1.9 1.9 1.9 3.2 0 2.6-1.9 4.5-4.8 4.5s-5.5-1.6-6.8-4.2l-3.9 3.9c2.9 4.2 6.5 6.1 11 6.1 6.5 0 11-4.2 11-10.3.1-5.5-1.9-7.7-9-10.3z" />
+                                            <path class="st1"
+                                                  d="M61.6 36.3c0 9.4 7.4 16.5 16.8 16.5 2.6 0 4.8-.6 7.7-1.9v-7.4C83.5 46 81.3 47 78.7 47c-6.1 0-10.6-4.5-10.6-11 0-6.1 4.5-11 10.3-11 2.9 0 5.2 1 7.7 3.5v-7.4c-2.6-1.3-4.8-1.9-7.7-1.9-9 .7-16.8 8.1-16.8 17.1zM136.8 41.8l-8.4-21.3h-6.8l13.2 32.6h3.6l13.9-32.6h-6.8zM154.8 52.1h17.8V47h-11.3v-8.7h11v-5.5h-11V26h11.3v-5.5h-17.8zM190 38.9c4.8-1 7.4-4.2 7.4-9 0-5.8-4.2-9.4-11.3-9.4h-9.4v31.6h6.1V39.5h1l8.7 12.6h7.4L190 38.9zm-5.2-3.9h-1.9v-9.7h1.9c3.9 0 6.1 1.6 6.1 4.8.1 3.3-2.2 4.9-6.1 4.9z" />
+                                            <path class="st1"
+                                                  d="M190 38.9c4.8-1 7.4-4.2 7.4-9 0-5.8-4.2-9.4-11.3-9.4h-9.4v31.6h6.1V39.5h1l8.7 12.6h7.4L190 38.9zm-5.2-3.9h-1.9v-9.7h1.9c3.9 0 6.1 1.6 6.1 4.8.1 3.3-2.2 4.9-6.1 4.9zM45.5 81.5V63.7l12.3 12.6V64.7h2.6v17.7L48.1 69.9v11.6h-2.6zM73.2 67.3h-6.8v3.9h6.5v2.6h-6.5v5.5h6.8v2.3h-9.4V64.7h9.4v2.6zM81.3 67.3v14.2h-2.6V67.3h-3.9V65h10.3v2.3h-3.8zM89 65l4.2 11.3 4.5-11.9 4.2 11.9 4.5-11.3h3.2l-7.4 17.7L98 70.8l-4.5 11.9-7-17.7H89zM110 73.1c0-2.3 1-4.5 2.6-6.1 1.6-1.6 3.9-2.6 6.1-2.6 2.3 0 4.5 1 6.1 2.6 1.6 1.6 2.6 3.9 2.6 6.1s-1 4.5-2.6 6.1c-1.6 1.6-3.9 2.6-6.1 2.6-2.3 0-4.2-.6-5.8-2.3-1.9-1.6-2.9-3.5-2.9-6.4zm2.6 0c0 1.9.6 3.2 1.9 4.5 1.3 1.3 2.6 1.9 4.2 1.9s3.2-.6 4.5-1.9c1.3-1.3 1.9-2.6 1.9-4.5s-.6-3.2-1.9-4.5c-1.3-1.3-2.6-1.9-4.5-1.9-1.6 0-3.2.6-4.5 1.9-1 1.3-1.6 2.9-1.6 4.5zM136.5 74.4l5.2 7.1h-3.2l-4.8-6.8h-.3v6.8h-2.6V64.7h2.9c2.3 0 3.9.3 4.8 1.3 1 1 1.6 2.3 1.6 3.5s-.3 2.3-1 2.9c-.7 1.3-1.7 2-2.6 2zm-3.3-1.9h.6c2.3 0 3.5-1 3.5-2.6s-1.3-2.6-3.5-2.6h-1v5.2h.4zM146.5 71.5l6.5-6.8h3.2l-7.4 7.4 7.4 9H153l-6.1-7.4-.6.6v6.8h-2.6V64.4h2.6v7.1h.2z" />
+                                        </svg>
+                                        <span class="d-none">Discover network</span>
+                                    </a>
+
+                                    <a href="#" class="px-5"
+                                       data-js-tooltip
+                                       data-tippy-content="American Express"
+                                       data-tippy-placement="top"
+                                       data-tippy-distance="6">
+                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                             class="icon icon--wide icon-payment-american-express" viewBox="0 0 190.7 100">
+                                            <path class="st1" d="M17.2 34.5h6.6L20.5 26z" />
+                                            <path class="st1"
+                                                  d="M163.5 18.2v3.6l-1.8-3.6h-14.1v3.6l-1.8-3.6h-19.2c-3.3 0-6 .6-8.4 1.8v-1.8h-13.5V20c-1.5-1.2-3.3-1.8-5.7-1.8H50.5l-3.3 7.5-3.3-7.5H28.6v3.6l-1.8-3.6H13.9l-6 14.1L1 48h15.3l1.8-4.8h4.2l1.8 4.8h17.4v-3.6L43 48h8.7l1.5-3.6V48H95v-7.8h.6c.6 0 .6 0 .6.9v6.6h21.6v-1.8c1.8.9 4.5 1.8 8.1 1.8h9l1.8-4.8h4.2l1.8 4.8h17.4v-4.5l2.7 4.5H177V18.2h-13.5zM62 43.5h-5.1V26.9l-7.2 16.5h-4.5L38 26.9v16.5H27.7L25.6 39H15.4l-1.8 4.8H7.9l9-21.3h7.5l8.4 20.1V22.4h8.1l6.6 14.4 6-14.4H62v21.1zm20.4-16.6H70.7v3.9h11.4V35H70.7v4.2h11.7v4.5H65.6V22.4h16.8v4.5zm22.5 8.8c.6 1.2.9 2.1.9 3.9v4.2h-5.1v-2.7c0-1.2 0-3-.9-4.2-.9-.9-1.8-.9-3.6-.9h-5.4v7.8h-5.1V22.4h11.4c2.7 0 4.5 0 6 .9s2.4 2.4 2.4 4.8c0 3.3-2.1 5.1-3.6 5.7 1.5.4 2.4 1.3 3 1.9zm9 7.8h-5.1V22.1h5.1v21.4zm59.2 0h-7.2l-9.6-15.9v15.9H146l-1.8-4.5h-10.5l-1.8 4.8h-5.7c-2.4 0-5.4-.6-7.2-2.4-1.8-1.8-2.7-4.2-2.7-8.1 0-3 .6-6 2.7-8.4 1.5-1.8 4.2-2.4 7.5-2.4h4.8V27h-4.8c-1.8 0-2.7.3-3.9 1.2-.9.9-1.5 2.7-1.5 4.8 0 2.4.3 3.9 1.5 5.1.9.9 2.1 1.2 3.6 1.2h2.1l6.9-16.5h7.5l8.4 20.1V22.7h7.5l8.7 14.7V22.7h5.1v20.7l.7.1z" />
+                                            <path class="st1"
+                                                  d="M135.5 34.5h6.9l-3.3-8.5zM84.5 77.7V60.6L76.7 69zM52.3 62.7v3.9h11.2v4.2H52.3v4.5h12.4l5.7-6.3-5.4-6.3z" />
+                                            <path class="st1"
+                                                  d="M95.9 62.7h-6.3v5.4h6.6c1.8 0 3-.9 3-2.7-.3-1.8-1.5-2.7-3.3-2.7z" />
+                                            <path class="st1"
+                                                  d="M188.7 67.8V54.3h-12.6c-2.7 0-4.8.6-6.3 1.8v-1.8H156c-2.1 0-4.8.6-6 1.8v-1.8h-24.3v1.8c-1.8-1.5-5.1-1.8-6.6-1.8h-16.2v1.8c-1.5-1.5-5.1-1.8-6.9-1.8H78l-4.2 4.5-3.9-4.5h-27v29.4h26.4l4.2-4.5 3.9 4.5h16.2v-6.9h2.1c2.1 0 4.8 0 6.9-.9V84H116v-7.8h.6c.9 0 .9 0 .9.9V84h40.8c2.7 0 5.4-.6 6.9-1.8V84h12.9c2.7 0 5.4-.3 7.2-1.5 3-1.8 4.8-5.1 4.8-9 .1-2.1-.5-4.2-1.4-5.7zm-93.1 4.8h-6v7.2H80l-6-6.9-6.3 6.9H47.8V58.5H68l6 6.9 6.3-6.9h15.9c3.9 0 8.4 1.2 8.4 6.9-.3 6-4.5 7.2-9 7.2zm30-1.2c.6.9.9 2.1.9 3.9v4.2h-5.1v-2.7c0-1.2 0-3.3-.9-4.2-.6-.9-1.8-.9-3.6-.9h-5.4v7.8h-5.1V58.2h11.4c2.4 0 4.5 0 6 .9s2.7 2.4 2.7 4.8c0 3.3-2.1 5.1-3.6 5.7 1.5.6 2.4 1.2 2.7 1.8zm20.7-8.7h-11.7v3.9H146v4.2h-11.4V75h11.7v4.5h-16.8V58.2h16.8v4.5zm12.6 16.8h-9.6V75h9.6c.9 0 1.5 0 2.1-.6.3-.3.6-.9.6-1.5s-.3-1.2-.6-1.5c-.3-.3-.9-.6-1.8-.6-4.8-.3-10.5 0-10.5-6.6 0-3 1.8-6.3 7.2-6.3h9.9V63h-9.3c-.9 0-1.5 0-2.1.3s-.6.9-.6 1.5c0 .9.6 1.2 1.2 1.5s1.2.3 1.8.3h2.7c2.7 0 4.5.6 5.7 1.8.9.9 1.5 2.4 1.5 4.5.1 4.5-2.6 6.6-7.8 6.6zm25.9-2.1c-1.2 1.2-3.3 2.1-6.3 2.1h-9.6V75h9.6c.9 0 1.5 0 2.1-.6.3-.3.6-.9.6-1.5s-.3-1.2-.6-1.5-.9-.6-1.8-.6c-4.8-.3-10.5 0-10.5-6.6 0-3 1.8-6.3 7.2-6.3h9.9V63h-9c-.9 0-1.5 0-2.1.3s-.6.9-.6 1.5c0 .9.3 1.2 1.2 1.5.6.3 1.2.3 1.8.3h2.7c2.7 0 4.5.6 5.7 1.8.3 0 .3.3.3.3.9 1.2 1.2 2.7 1.2 4.2 0 1.8-.6 3.3-1.8 4.5z" />
+                                            <path class="st1" d="M84.5 77.7V60.6L76.7 69z" />
+                                            <path class="st5" d="M162.9 46.8l.6.9h.3z" />
+                                            <path class="st1"
+                                                  d="M117.8 62.7h-6.3v5.4h6.6c1.8 0 3-.9 3-2.7-.3-1.8-1.5-2.7-3.3-2.7z" />
+                                            <path class="st1"
+                                                  d="M97.1 26.4h-6.3v5.4h6.6c1.8 0 3-.9 3-2.7-.3-1.8-1.5-2.7-3.3-2.7z" />
+                                        </svg>
+                                        <span class="d-none">American express</span>
+                                    </a>
+
+                                    <a href="#" class="px-5"
+                                       data-js-tooltip
+                                       data-tippy-content="McAfee Secure"
+                                       data-tippy-placement="top"
+                                       data-tippy-distance="6">
+                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                             class="icon icon--wide icon-payment-mcafee-secure" viewBox="0 0 200 100">
+                                            <path class="st0"
+                                                  d="M67.9 21.6c-.5-.2-16.6-4.7-33.3-4.7S1.4 21.6 1.4 21.6c-4.3 52 33.1 64.7 33.1 64.7s37.7-12.8 33.4-64.7zM34.6 82.9S.7 71.4 4.6 24.3c0 0 14.9-4.3 30-4.3s29.7 4.1 30.1 4.3c4 47.1-30.1 58.6-30.1 58.6z" />
+                                            <path class="st1"
+                                                  d="M34.6 77.1S6.2 66.7 9.5 27.2c0 0 12.5 1 25.1 1 12.7 0 24.9-1 25.3-1 3.2 39.4-25.3 49.9-25.3 49.9z" />
+                                            <path class="st4"
+                                                  d="M19.4 60.1l4.1-26.5h6.7l8.3 26.5h-7.1l-3.6-13.7-2 13.7zM39.5 33.6h6.7l3.9 26.5h-6.4l-2.3-13.7-2.3 10.7-3.5-10.7z" />
+                                            <path class="st1"
+                                                  d="M92.5 46.4h-5.2l-5-12.7-1.8 12.7h-5.7l3.7-23.7H84l8.5 23.7zm-3.7-12.1l4.3-11.6h5.7l3.3 23.7h-5.7l-1.6-12.7-3.3 7.6-2.7-7zM123.7 42.3l-1.4 4.1h-5.7l8-23.7h5.9l7.8 23.7h-5.7l-1.3-4.1h-7.6zm3.7-12.3l-2.3 7.5h4.5l-2.2-7.5zM166.9 39.3h-11.1c0 2.3 1.1 3.6 3.3 3.6 1.1 0 2-.4 2.5-1.5h5.1c-.4 1.9-1.5 3.3-2.8 4.2-1.4.9-3 1.3-4.7 1.3-4.9 0-8.6-3-8.6-8.6 0-5.4 3.4-8.6 8.2-8.6 5.2 0 8.2 3.4 8.2 9l-.1.6zm-4.8-3.3c-.3-1.5-1.6-2.6-3-2.6-1.5 0-2.8.9-3.1 2.6h6.1zM185.2 39.3h-11.1c0 2.3 1.1 3.6 3.3 3.6 1.1 0 2-.4 2.5-1.5h5.1c-.4 1.9-1.5 3.3-2.8 4.2-1.4.9-3 1.3-4.7 1.3-4.9 0-8.6-3-8.6-8.6 0-5.4 3.4-8.6 8.2-8.6 5.2 0 8.2 3.4 8.2 9l-.1.6zm-4.9-3.3c-.3-1.5-1.6-2.6-3-2.6-1.5 0-2.8.9-3.1 2.6h6.1zM185.9 27.1c0-2.3 1.8-4.1 4.1-4.1s4.1 1.8 4.1 4.1-1.8 4.1-4.1 4.1c-2.4-.1-4.1-1.8-4.1-4.1zm.6 0c0 1.9 1.5 3.4 3.4 3.4 1.8 0 3.4-1.5 3.4-3.4s-1.5-3.4-3.4-3.4c-1.8 0-3.4 1.5-3.4 3.4zm5.3 2.3h-.8l-1.1-2.1h-.9v2.1h-.7v-4.6h1.9c.8 0 1.6.2 1.6 1.2 0 .9-.6 1.2-1.2 1.2l1.2 2.2zm-2.8-3.9v1.1h.7c.6 0 1.5.1 1.5-.5s-.5-.6-1-.6H189z" />
+                                            <g>
+                                                <path class="st1"
+                                                      d="M140.2 34.1h-3.1v-3.9h3.2v-1.9c0-4.8 2.1-6.4 6.3-6.4 1.1 0 2 .2 2.7.3L149 26c-.4-.2-.9-.2-1.6-.2-1.3 0-1.8 1-1.8 2.6v1.9h3.7v3.9h-3.7v12.2h-5.2l-.2-12.3z" />
+                                            </g>
+                                            <g>
+                                                <path class="st1"
+                                                      d="M86.6 57.7c-1.7-.7-2.6-.9-4.3-.9-1.8 0-4 .7-4 3 0 4.3 9.9 3.3 9.9 10.6 0 4.7-3.8 6.6-8.4 6.6-1.6 0-3.2-.5-4.7-.9l.3-3c1.1.5 3.1 1.1 4.8 1.1 1.9 0 4.5-1 4.5-3.6 0-5-9.9-3.6-9.9-10.5 0-3.9 3.2-6 7.4-6 1.5 0 3.3.3 4.9.8l-.5 2.8zM92.7 54.3h12.9v2.8H96v6.5h8.7v2.8H96v7.3h9.6v2.8H92.7V54.3zM125.4 58c-1.5-.8-3.1-1.3-4.7-1.3-5.3 0-8.8 3.7-8.8 8.7 0 5.2 3.9 8.7 8.6 8.7 1.6 0 3.9-.4 5-1.1l.2 3.1c-1.8.7-3.9.8-5.2.8-7.3 0-12.1-4.5-12.1-11.6 0-6.9 5.1-11.4 12.1-11.4 1.8 0 3.5.3 5.2 1l-.3 3.1zM146.2 67.4c0 6.2-3.3 9.6-8.9 9.6s-8.9-3.4-8.9-9.6V54.3h3.3v12.6c0 4.3 1.4 7.2 5.6 7.2s5.6-2.9 5.6-7.2V54.3h3.3v13.1zM151.5 54.3h5.6c4.6 0 8.9.7 8.9 6 0 2.7-2.1 4.6-4.7 5.1v.1c1 .4 1.5.8 2.2 2.2l4.4 8.9h-3.8l-3.5-7.7c-1-2.2-2.1-2.2-3.9-2.2h-2v9.9h-3.3V54.3zm3.3 9.6h2.8c3.1 0 5-1.3 5-3.5 0-2-1.6-3.3-4.6-3.3h-3.2v6.8zM171.6 54.3h12.9v2.8h-9.6v6.5h8.7v2.8h-8.7v7.3h9.6v2.8h-12.9V54.3z" />
+                                            </g>
+                                            <path class="st1"
+                                                  d="M115.2 35.3c-1-.6-1.9-.9-3.2-.9-2.3 0-4 1.6-4 4.4 0 2.6 2 4.2 4.3 4.2 1.2 0 2.4-.3 3.3-.8l.1 4.1c-1.3.5-2.9.7-4.2.7-5 0-8.8-3.1-8.8-8.4 0-5.3 3.8-8.4 8.8-8.4 1.6 0 2.9.3 4.1.9l-.4 4.2z" />
+                                        </svg>
+                                        <span class="d-none">Mcafee secure</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <a href="#header" class="footer__back-to-top d-flex position-lg-fixed flex-center"
+               data-js-button-back-to-top="600">
+                <i>
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-014"
+                         viewBox="0 0 24 24">
+                        <path d="M11.791 21.505a.598.598 0 0 1-.439-.186.601.601 0 0 1-.186-.439V4.883l-4.551 4.57a.649.649 0 0 1-.449.177.652.652 0 0 1-.449-.176.652.652 0 0 1-.176-.449c0-.169.059-.319.176-.449l5.625-5.625a2.48 2.48 0 0 1 .107-.068c.032-.02.068-.042.107-.068a.736.736 0 0 1 .468 0c.039.026.075.049.107.068.032.02.068.042.107.068l5.625 5.625c.117.13.176.28.176.449a.652.652 0 0 1-.176.449.877.877 0 0 1-.215.127.596.596 0 0 1-.468 0 .877.877 0 0 1-.215-.127l-4.551-4.57V20.88a.6.6 0 0 1-.186.439.59.59 0 0 1-.437.186z" />
+                    </svg>
+                </i><span class="d-lg-none mt-4 ml-2">TOP</span>
+            </a>
+        </div>
+
+        <script>
+            Loader.require({
+                type: "script",
+                name: "footer"
+            });
+        </script>
+
+
+    </div>
+
+
+
+
+    <div id="theme-loader" class="d-none">
+        <div class="loader js-loader">
+            <div class="loader__bg" data-js-loader-bg></div>
+
+            <div class="loader__spinner" data-js-loader-spinner><img src="~/Content/Template/images/Ilyasoft-preloader.svg" alt="Pre-loader"></div>
+        </div>
+    </div>
+    <div class="scroll-offset-example"></div>
+
+    <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+    var body = document.body,
+        style_file = body.getAttribute('data-style-file');
+
+    Loader.require({
+        type: 'style',
+        name: 'text_font'
+    });
+    Loader.require({
+        type: 'style',
+        name: 'plugin_tippy'
+    });
+    Loader.require({
+        type: 'style',
+        name: style_file ? style_file : 'theme'
+    });
+    window.theme = {
+        strings: {
+            general: {
+                popups: {
+                    cart: {
+                        item_added: "{{ title }} was added to your shopping cart.",
+                        limit_is_exceeded: "Maximum product quantity in cart items {{ limit }} added.",
+                        count: "({{ count }})"
+                    },
+                    wishlist: {
+                        count: "({{ count }})"
+                    },
+                    compare: {
+                        count: "({{ count }})"
+                    },
+                    confirm_transfer_data: {
+                        info: "{{ title }}: {{ count }} {{ name }}",
+                        wishlist_title: "Wishlist",
+                        compare_title: "Compare",
+                        name_single: "product",
+                        name_plural: "products"
+                    }
+                }
+            },
+            layout: {
+                cart: {
+                    items_count: {
+                        one: "item",
+                        other: "items"
+                    }
+                }
+            },
+            addToCart: "{\u0026quot;title\u0026quot;=\u0026gt;\u0026quot;ADD TO CART\u0026quot;, \u0026quot;added\u0026quot;=\u0026gt;\u0026quot;ADDED\u0026quot;, \u0026quot;sold_out\u0026quot;=\u0026gt;\u0026quot;SOLD OUT\u0026quot;}",
+            soldOut: "translation missing: en.products.product.sold_out",
+            unavailable: "translation missing: en.products.product.unavailable",
+            priceSaleSeparator: " from",
+            availability_value_in_stock: "In stock ({{ count }} {{ item }})",
+            availability_value_out_stock: "Out of Stock",
+            stock_countdown: {
+                title: "Hurry! Only {{ quantity }} Left in Stock!"
+            },
+            countdown: {
+                years: "YRS",
+                months: "MTH",
+                weeks: "WK",
+                days: "DAYS",
+                hours: "HRS",
+                minutes: "MIN",
+                seconds: "SEC"
+            },
+            text_countdown: {
+                hours: "Hours",
+                minutes: "Minutes",
+                days_of_week: {
+                    sunday: "Sunday",
+                    monday: "Monday",
+                    tuesday: "Tuesday",
+                    wednesday: "Wednesday",
+                    thursday: "Thursday",
+                    friday: "Friday",
+                    saturday: "Saturday"
+                }
+            },
+            header: {
+                cart_count_desktop: "Bag ({{ count }})"
+            },
+            label: {
+                sale: "-{{ percent }}%"
+            },
+            cart: {
+                general: {
+                    shipping_calculator_data_info: "There is one shipping rate available for {{ data }}.",
+                    free_shipping_html: "Spend {{ value }} to Free Shipping",
+                    free_shipping_complete: "Free Shipping"
+                }
+            },
+
+        },
+        multipleСurrencies: true,
+        moneyFormat: "\u003cspan class=money\u003e${{amount}}\u003c\/span\u003e",
+        customer: false,
+        animations: {
+            css: {
+                duration: 0.3
+            },
+            tooltip: {
+                type: "scale",
+                inertia: true,
+                show_duration: 0.2,
+                hide_duration: 0.1
+            },
+            sticky_header: {
+                duration: 0.2,
+                opacity: 0.9
+            },
+            header_tape: {
+                duration: 0
+            },
+            menu: {
+                duration: 0.4
+            },
+            dropdown: {
+                duration: 0.3
+            },
+            accordion: {
+                duration: 0.4
+            },
+            footbar_product: {
+                duration: 0.4
+            },
+            tabs: {
+                duration: 0.4,
+                scroll_duration: 0.4
+            },
+            backtotop: {
+                scroll_duration: 0.4
+            }
+        }
+    };
+    Loader.require({
+        type: 'script',
+        name: 'plugin_popper'
+    });
+    Loader.require({
+        type: 'script',
+        name: 'plugin_tippy'
+    });
+    Loader.require({
+        type: 'script',
+        name: 'tooltip'
+    });
+
+    Loader.load();
+    </script>
+
+    <script src="~/Content/Template/scripts/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</body>
+</html>

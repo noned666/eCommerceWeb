@@ -1,0 +1,145 @@
+﻿@model eCommerceUI.Models.UserMV
+@{
+    ViewBag.Title = "Register";
+}
+<div class="breadcrumbs mt-15">
+    <div class="container">
+        <ul class="list-unstyled d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <li><a href="@Url.Content("~/Home/Index")">Home</a></li>
+            <li><span>Create Account</span></li>
+        </ul>
+    </div>
+</div>
+<div class="register mb-60">
+    <div class="container">
+        <h1 class="h3 mt-30 mb-40 text-center">Sign Up</h1>
+        @using (Html.BeginForm("Register", "User"))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <label for="UserTypeID" class="label-required">USER TYPE*</label>
+                @Html.DropDownList("UserTypeID", new SelectList(Model.UserTypeList, "UserTypeID", "UserType", Model.UserTypeID), "--Choose--", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.UserTypeID, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label for="FirstName" class="label-required">FIRST NAME</label>
+                @Html.EditorFor(model => model.FirstName, new
+                {
+                    htmlAttributes = new
+                    {
+                       @class = "form-control",
+                       @type = "text",
+                       @id = "FirstName",
+                       @placeholder = "Enter your first name",
+                       @required = "required"
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label for="LastName" class="label-required">LAST NAME</label>
+                @Html.EditorFor(model => model.LastName, new
+                {
+                    htmlAttributes = new
+                    {
+                       @class = "form-control",
+                       @type = "text",
+                       @id = "LastName",
+                       @placeholder = "Enter your last name",
+                       @required = "required"
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label for="UserName" class="label-required">USER NAME</label>
+                @Html.EditorFor(model => model.UserName, new
+                {
+                    htmlAttributes = new
+                    {
+                       @class = "form-control",
+                       @type = "text",
+                       @id = "UserName",
+                       @placeholder = "Enter your user name",
+                       @required = "required"
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label for="GenderID" class="label-required">GENDER</label>
+                @Html.DropDownList("GenderID", new SelectList(Model.GenderList, "GenderID", "GenderTitle", Model.GenderID), "--Choose--", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.GenderID, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label for="ContactNo" class="label-required">Contact No</label>
+                @Html.EditorFor(model => model.ContactNo, new
+                {
+                    htmlAttributes = new
+                    {
+                       @class = "form-control",
+                       @type = "text",
+                       @id = "ContactNo",
+                       @placeholder = "Enter your contact no",
+                       @required = "required"
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.ContactNo, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label for="Email" class="label-required">EMAIL</label>
+                @Html.EditorFor(model => model.EmailAddress, new
+                {
+                    htmlAttributes = new
+                    {
+                        @type = "email",
+                        @id = "Email",
+                        @class = "",
+                        @placeholder = "Enter your email",
+                        @value = "",
+                        @spellcheck = "false",
+                        @autocomplete = "off",
+                        @autocapitalize = "off",
+                        @required = "required"
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.EmailAddress, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label for="CreatePassword" class="label-required">PASSWORD</label>
+                @Html.EditorFor(model => model.Password, new
+                {
+                    htmlAttributes = new
+                    {
+                       @type = "password",
+                       @id = "CreatePassword",
+                       @class = "",
+                       @placeholder = "Enter your password",
+                       @required = "required"
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label for="ConfirmPassword" class="label-required">CONFIRM PASSWORD</label>
+                @Html.EditorFor(model => model.ConfirmPassword, new
+                {
+                    htmlAttributes = new
+                    {
+                       @type = "password",
+                       @id = "ConfirmPassword",
+                       @class = "",
+                       @placeholder = "Re-Enter your password",
+                       @required = "required"
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+            </div>
+            <div class="text-center">
+                <input type="submit" value="SIGN UP NOW!" class="btn btn--full btn--secondary">
+                <a href="#" class="h6 btn-link mt-20 mb-0">RETURN TO STORE</a>
+            </div>
+        }
+    </div>
+</div>
